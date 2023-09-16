@@ -1,167 +1,230 @@
 <!DOCTYPE html>
 <html lang="ua">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="">
-            <img src="./images/logo.png" alt="lotus">
-            <span>FlowerLover</span>
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Головна</a>
-                </li>
-                <li>
-                    <a href="">Каталог</a>
-                </li>
-                <li>
-                    <a href="">Про нас</a>
-                </li>
-                <li>
-                    <a href="">Як замовити</a>
-                </li>
-                <li>
-                    <a href="">Відгуки</a>
-                </li>
-                <li>
-                    <a href="">Контакти</a>
-                </li>
-            </ul>
-        </nav>
+      <a href="">
+        <img src="./images/logo.png" alt="lotus" />
+        <span>FlowerLover</span>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Головна</a>
+          </li>
+          <li>
+            <a href="">Каталог</a>
+          </li>
+          <li>
+            <a href="">Про нас</a>
+          </li>
+          <li>
+            <a href="">Як замовити</a>
+          </li>
+          <li>
+            <a href="">Відгуки</a>
+          </li>
+          <li>
+            <a href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <!-- hero -->
-        <section>
-            <h2>Неймовірні</h2>
-            <h1>Букети</h1>
-            <h2>зі свіжих квітів</h2>
-            <p>З доставкою по Києву протягом 1 години</p>
-            <button type="button">ЗАМОВИТИ КВІТИ</button>
-            <ul>
-                <li>
-                    <img src="./images/rose.png" alt="rose">
-                    <p>Щоденне оновлення свіжих квітів</p>
-                </li>
-                <li>
-                    <img src="./images/point.png" alt="point">
-                    <p>безкоштовна доставка в будь яку точку міста</p>
-                </li>
-                <li>
-                    <img src="./images/planet.png" alt="planet">
-                    <p>більше 1000 сортів квітів з усього світу</p>
-                </li>
-            </ul>
-        </section>
-        <!-- catalog -->
-        <section>
-            <h2>Каталог</h2>
-            <h2>Доставка квітів в Києві</h2>
+      <!-- hero -->
+      <section>
+        <h2>Неймовірні</h2>
+        <h1>Букети</h1>
+        <h2>зі свіжих квітів</h2>
+        <p>З доставкою по Києву протягом 1 години</p>
+        <button type="button">ЗАМОВИТИ КВІТИ</button>
+        <ul>
+          <li>
+            <img src="./images/rose.png" alt="rose" />
+            <p>Щоденне оновлення свіжих квітів</p>
+          </li>
+          <li>
+            <img src="./images/point.png" alt="point" />
+            <p>безкоштовна доставка в будь яку точку міста</p>
+          </li>
+          <li>
+            <img src="./images/planet.png" alt="planet" />
+            <p>більше 1000 сортів квітів з усього світу</p>
+          </li>
+        </ul>
+      </section>
+      <!-- catalog -->
+      <section>
+        <h2>Каталог</h2>
+        <h2>Доставка квітів в Києві</h2>
+        <div>
+          <select id="size" name="size">
+            <option value="xs" selected>Ціна ...</option>
+            <option value="s">Економ</option>
+            <option value="m">Стандарт</option>
+            <option value="l">Преміум</option>
+          </select>
+          <select id="size" name="size">
+            <option value="xs" selected>Квіти ...</option>
+            <option value="s">Троянди</option>
+            <option value="m">Ромашки</option>
+            <option value="l">Тюльпани</option>
+            <option value="j">Нарциси</option>
+            <option value="a">Лілії</option>
+            <option value="e">Піони</option>
+            <option value="d">Хрезантеми</option>
+          </select>
+          <select id="size" name="size">
+            <option value="xs" selected>Кому ...</option>
+            <option value="s">Рідним</option>
+            <option value="m">Друзям</option>
+            <option value="l">Колегам</option>
+            <option value="w">Нареченим</option>
+          </select>
+          <select id="size" name="size">
+            <option value="xs" selected>Привід...</option>
+            <option value="s">День народження</option>
+            <option value="m">Христини</option>
+            <option value="l">Весілля</option>
+            <option value="">Просто так</option>
+          </select>
+          <select id="size" name="size">
+            <option value="xs" selected>Стиль ...</option>
+            <option value="s">Букет</option>
+            <option value="m">Композиція</option>
+            <option value="l">Одна квітка</option>
+          </select>
+        </div>
+
+        <h2>Хіт продажів</h2>
+        <ul>
+          <li>
+            <img src="./images/flowers1.jpg" alt="flowers1" />
+            <h2>500 ₴</h2>
+            <span>700 ₴</span>
+            <p>Мінібукет 1400-2</p>
+          </li>
+          <li>
+            <img src="./images/flowers2.jpg" alt="flowers2" />
+            <h2>800 ₴</h2>
+            <p>Мінібукет 1600-6</p>
+          </li>
+          <li>
+            <img src="./images/flowers3.jpg" alt="flowers3" />
+            <h2>1000 ₴</h2>
+            <p>Троянда Freedom 51 шт.</p>
+          </li>
+          <li>
+            <img src="./images/flowers4.jpg" alt="flowers4" />
+            <h2>680 ₴</h2>
+            <p>Мінібукет 1400-3</p>
+          </li>
+          <li>
+            <img src="./images/flowers5.jpg" alt="flowers5" />
+            <h2>450 ₴</h2>
+            <p></p>
+          </li>
+          <li>
+            <img src="./images/flowers6.jpg" alt="flowers6" />
+            <h2>56 ₴</h2>
+            <p>Нобіліс</p>
+          </li>
+        </ul>
+        <button type="button">Дивитись всі</button>
+      </section>
+      <!-- quality -->
+      <section>
+        <h2>Якість в деталях</h2>
+        <ul>
+          <li>
+            <h2>Контроль свіжості квітів</h2>
+            <p>
+              Ми співпрацюємо з кращими постачальниками квітів і готові
+              запропонувати Вам широкий асортимент квітів, починаючи від
+              місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
+              Ваша близька людина отримає найкращий подарунок, адже ми ретельно
+              підбираємо кожну квітку для вашого букету.
+            </p>
+            <img
+              src="./images/quality1.jpg"
+              width="659"
+              height="477"
+              alt="quality1"
+            />
+          </li>
+          <li>
+            <h2>Оформлення букетів</h2>
+            <p>
+              Ми готові зібрати унікальний букет по індивідуальному замовленню .
+              Наші флористи втілять в життя будь яку Вашу ідею!
+            </p>
+            <img
+              src="./images/quality2.jpg"
+              width="648"
+              height="467"
+              alt="quality2"
+            />
+          </li>
+          <li>
+            <h2>Швидка доставка</h2>
+            <p>
+              Ми робимо доставки по Україні протягом 3-х годин з моменту оплати
+              замовлення.
+            </p>
+            <img
+              src="./images/quality3.jpg"
+              width="659"
+              height="509"
+              alt="quality3"
+            />
+          </li>
+        </ul>
+      </section>
+      <!-- contacts -->
+      <section>
+        <h2>Не можете визначитись з вибором букету?</h2>
+        <div>
+            <form action="">
+                <h3>Відправте заявку </h3>
+                <p>
+                    і Вам зателефонують 
+                    протягом однієї хвилини</p>
+                    <ul>
+                        <li><input type="text" placeholder="Ім’я"></li>
+                        <li><input type="tel" placeholder="Телефон"></li>
+                    </ul>
+                    <button type="submit">Залишити заявку</button>
+            </form>
             <div>
-                <select id="size" name="size">
-                    <option value="xs" selected>Ціна ...</option>
-                    <option value="s">Економ</option>
-                    <option value="m">Стандарт</option>
-                    <option value="l">Преміум</option>
-                </select>
-                <select id="size" name="size">
-                    <option value="xs" selected>Квіти ...</option>
-                    <option value="s">Троянди</option>
-                    <option value="m">Ромашки</option>
-                    <option value="l">Тюльпани</option>
-                    <option value="j">Нарциси</option>
-                    <option value="a">Лілії</option>
-                    <option value="e">Піони</option>
-                    <option value="d">Хрезантеми</option>
-                </select>
-                <select id="size" name="size">
-                    <option value="xs" selected>Кому ...</option>
-                    <option value="s">Рідним</option>
-                    <option value="m">Друзям</option>
-                    <option value="l">Колегам</option>
-                    <option value="w">Нареченим</option>
-                </select>
-                <select id="size" name="size">
-                    <option value="xs" selected>Привід...</option>
-                    <option value="s">День народження</option>
-                    <option value="m">Христини</option>
-                    <option value="l">Весілля</option>
-                    <option value="">Просто так</option>
-                </select>
-                <select id="size" name="size">
-                    <option value="xs" selected>Стиль ...</option>
-                    <option value="s">Букет</option>
-                    <option value="m">Композиція</option>
-                    <option value="l">Одна квітка</option>
-                </select>
+                <h3>Наш менеджер по телефону: </h3>
+                <ul>
+                    <li>
+                        <img src="./images/checkmark.png" alt="checkmark">
+                        <p>Відповість на будь які запитання</p>
+                    </li>
+                    <li>
+                        <img src="./images/checkmark.png" alt="checkmark">
+                        <p>Підбере рішення відповідно 
+                            до ваших запитів та бажань</p>
+                    </li>
+                    <li>
+                        <img src="./images/checkmark.png" alt="checkmark">
+                        <p>Підготує унікальну пропозицію
+                            та детально розповість Вам про наші букети</p>
+                    </li>
+                    <li>
+                        <img src="./images/checkmark.png" alt="checkmark">
+                        <p>Оформить для Вас подарунок-сюрприз</p>
+                    </li>
+                </ul>
             </div>
-
-            <h2>Хіт продажів</h2>
-            <ul>
-                <li>
-                    <img src="./images/flowers1.jpg" alt="flowers1">
-                    <h2>500 ₴</h2>
-                    <span>700 ₴</span>
-                    <p>Мінібукет 1400-2</p>
-                </li>
-                <li>
-                    <img src="./images/flowers2.jpg" alt="flowers2">
-                    <h2>800 ₴</h2>
-                    <p>Мінібукет 1600-6</p>
-                </li>
-                <li>
-                    <img src="./images/flowers3.jpg" alt="flowers3">
-                    <h2>1000 ₴</h2>
-                    <p>Троянда Freedom 51 шт.</p>
-                </li>
-                <li>
-                    <img src="./images/flowers4.jpg" alt="flowers4">
-                    <h2>680 ₴</h2>
-                    <p>Мінібукет 1400-3</p>
-                </li>
-                <li>
-                    <img src="./images/flowers5.jpg" alt="flowers5">
-                    <h2>450 ₴</h2>
-                    <p></p>
-                </li>
-                <li>
-                    <img src="./images/flowers6.jpg" alt="flowers6">
-                    <h2>56 ₴</h2>
-                    <p>Нобіліс</p>
-                </li>
-            </ul>
-            <button type="button">Дивитись всі</button>
-        </section>
-        <!-- quality -->
-        <section>
-<h2>Якість в деталях</h2>
-<ul>
-   <li>
-    <h2>Контроль свіжості квітів</h2>
-<p>Ми співпрацюємо з кращими постачальниками квітів і готові запропонувати Вам широкий асортимент квітів, починаючи від місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
-    Ваша близька людина отримає найкращий подарунок, адже ми ретельно підбираємо кожну квітку для вашого букету.</p>
-<img src="./images/quality1.jpg" width="659" height="477" alt="quality1">
-   </li>
-   <li>
-    <h2>Оформлення букетів</h2>
-    <p>Ми готові зібрати унікальний букет по індивідуальному замовленню . Наші флористи втілять в життя будь яку Вашу ідею!</p>
-<img src="./images/quality2.jpg" width="648" height="467" alt="quality2">
-   </li>
-   <li>
-    <h2>Швидка доставка</h2>
-    <p>Ми робимо доставки по Україні протягом 3-х годин з моменту оплати замовлення.  </p>
-<img src="./images/quality3.jpg" width="659" height="509" alt="quality3">
-   </li>
-</ul>
-        </section>
+        </div>
+      </section>
     </main>
-
-</body>
-
+  </body>
 </html>
