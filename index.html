@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,130 +8,130 @@
   </head>
 
   <body>
-    <header>
-      <a href="">
-        <img src="./images/logo.png" alt="lotus" />
-        <span>FlowerLover</span>
+    <header class="header">
+      <a class="header-logo" href="">
+        <img class="header-flower" src="./images/logo.png" alt="lotus" />
+        <span class="header-flowerlover">FlowerLover</span>
       </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Головна</a>
+      <nav class="header-navigation">
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-link" href="">Головна</a>
           </li>
-          <li>
-            <a href="">Каталог</a>
+          <li class="header-item">
+            <a class="header-link" href="">Каталог</a>
           </li>
-          <li>
-            <a href="">Про нас</a>
+          <li class="header-item">
+            <a class="header-link" href="">Про нас</a>
           </li>
-          <li>
-            <a href="">Як замовити</a>
+          <li class="header-item">
+            <a class="header-link" href="">Як замовити</a>
           </li>
-          <li>
-            <a href="">Відгуки</a>
+          <li class="header-item">
+            <a class="header-link" href="">Відгуки</a>
           </li>
-          <li>
-            <a href="">Контакти</a>
+          <li class="header-item">
+            <a class="header-link" href="">Контакти</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <!-- hero -->
-      <section>
-        <h2>Неймовірні</h2>
-        <h1>Букети</h1>
-        <h2>зі свіжих квітів</h2>
-        <p>З доставкою по Києву протягом 1 години</p>
-        <button type="button">ЗАМОВИТИ КВІТИ</button>
-        <ul>
-          <li>
-            <img src="./images/rose.png" alt="rose" />
-            <p>Щоденне оновлення свіжих квітів</p>
+      <section class="hero">
+        <h2 class="hero-title">Неймовірні</h2>
+        <h1 class="hero-header">Букети</h1>
+        <h2 class="hero-title">зі свіжих квітів</h2>
+        <p class="hero-text">З доставкою по Києву протягом 1 години</p>
+        <button  class="hero-button" type="button">ЗАМОВИТИ КВІТИ</button>
+        <ul class="hero-list">
+          <li class="hero-item">
+            <img class="hero-icon" src="./images/rose.png" alt="rose" />
+            <p class="hero-information">Щоденне оновлення свіжих квітів</p>
           </li>
-          <li>
-            <img src="./images/point.png" alt="point" />
-            <p>безкоштовна доставка в будь яку точку міста</p>
+          <li class="hero-item">
+            <img class="hero-icon" src="./images/point.png" alt="point" />
+            <p class="hero-information">безкоштовна доставка в будь яку точку міста</p>
           </li>
-          <li>
-            <img src="./images/planet.png" alt="planet" />
-            <p>більше 1000 сортів квітів з усього світу</p>
+          <li class="hero-item">
+            <img class="hero-icon" src="./images/planet.png" alt="planet" />
+            <p class="hero-information">більше 1000 сортів квітів з усього світу</p>
           </li>
         </ul>
       </section>
       <!-- catalog -->
-      <section>
-        <h2>Каталог</h2>
-        <h2>Доставка квітів в Києві</h2>
-        <div>
-          <select id="size" name="size">
-            <option value="xs" selected>Ціна ...</option>
-            <option value="s">Економ</option>
-            <option value="m">Стандарт</option>
-            <option value="l">Преміум</option>
+      <section class="catalog">
+        <h2 class="catalog-title">Каталог</h2>
+        <h2 class="catalog-heading">Доставка квітів в Києві</h2>
+        <div class="catalog-box">
+          <select  name="price" class="catalog-list">
+            <option value="xs" selected class="catalog-item">Ціна ...</option>
+            <option value="s" class="catalog-item">Економ</option>
+            <option value="m" class="catalog-item">Стандарт</option>
+            <option value="l" class="catalog-item">Преміум</option>
           </select>
-          <select id="size" name="size">
-            <option value="xs" selected>Квіти ...</option>
-            <option value="s">Троянди</option>
-            <option value="m">Ромашки</option>
-            <option value="l">Тюльпани</option>
-            <option value="j">Нарциси</option>
-            <option value="a">Лілії</option>
-            <option value="e">Піони</option>
-            <option value="d">Хрезантеми</option>
+          <select  name="flowers" class="catalog-list">
+            <option value="xs" selected class="catalog-item">Квіти ...</option>
+            <option value="s" class="catalog-item">Троянди</option>
+            <option value="m" class="catalog-item">Ромашки</option>
+            <option value="l" class="catalog-item">Тюльпани</option>
+            <option value="j" class="catalog-item">Нарциси</option>
+            <option value="a" class="catalog-item">Лілії</option>
+            <option value="e" class="catalog-item">Піони</option>
+            <option value="d" class="catalog-item">Хрезантеми</option>
           </select>
-          <select id="size" name="size">
-            <option value="xs" selected>Кому ...</option>
-            <option value="s">Рідним</option>
-            <option value="m">Друзям</option>
-            <option value="l">Колегам</option>
-            <option value="w">Нареченим</option>
+          <select  name="to-who" class="catalog-list">
+            <option value="xs" selected class="catalog-item">Кому ...</option>
+            <option value="s" class="catalog-item">Рідним</option>
+            <option value="m" class="catalog-item">Друзям</option>
+            <option value="l" class="catalog-item">Колегам</option>
+            <option value="w" class="catalog-item">Нареченим</option>
           </select>
-          <select id="size" name="size">
-            <option value="xs" selected>Привід...</option>
-            <option value="s">День народження</option>
-            <option value="m">Христини</option>
-            <option value="l">Весілля</option>
-            <option value="">Просто так</option>
+          <select name="occasion" class="catalog-list">
+            <option value="xs" selected class="catalog-item">Привід...</option>
+            <option value="s" class="catalog-item">День народження</option>
+            <option value="m" class="catalog-item">Христини</option>
+            <option value="l" class="catalog-item">Весілля</option>
+            <option value="" class="catalog-item">Просто так</option>
           </select>
-          <select id="size" name="size">
-            <option value="xs" selected>Стиль ...</option>
-            <option value="s">Букет</option>
-            <option value="m">Композиція</option>
-            <option value="l">Одна квітка</option>
+          <select  name="style" class="catalog-list">
+            <option value="xs" selected class="catalog-item">Стиль ...</option>
+            <option value="s" class="catalog-item">Букет</option>
+            <option value="m" class="catalog-item">Композиція</option>
+            <option value="l" class="catalog-item">Одна квітка</option>
           </select>
         </div>
 
-        <h2>Хіт продажів</h2>
-        <ul>
-          <li>
-            <img src="./images/flowers1.jpg" alt="flowers1" />
+        <h2 class="catalog-heading">Хіт продажів</h2>
+        <ul class="catalog-flowers">
+          <li class="catalog-flower">
+            <img src="./images/flowers1.jpg" alt="flowers1" class="catalog-images"/>
             <h2>500 ₴</h2>
             <span>700 ₴</span>
             <p>Мінібукет 1400-2</p>
           </li>
-          <li>
-            <img src="./images/flowers2.jpg" alt="flowers2" />
+          <li class="catalog-flower">
+            <img src="./images/flowers2.jpg" alt="flowers2" class="catalog-images"/>
             <h2>800 ₴</h2>
             <p>Мінібукет 1600-6</p>
           </li>
-          <li>
-            <img src="./images/flowers3.jpg" alt="flowers3" />
+          <li class="catalog-flower">
+            <img src="./images/flowers3.jpg" alt="flowers3"  class="catalog-images"/>
             <h2>1000 ₴</h2>
             <p>Троянда Freedom 51 шт.</p>
           </li>
-          <li>
-            <img src="./images/flowers4.jpg" alt="flowers4" />
+          <li class="catalog-flower">
+            <img src="./images/flowers4.jpg" alt="flowers4"  class="catalog-images"/>
             <h2>680 ₴</h2>
             <p>Мінібукет 1400-3</p>
           </li>
-          <li>
-            <img src="./images/flowers5.jpg" alt="flowers5" />
+          <li class="catalog-flower">
+            <img src="./images/flowers5.jpg" alt="flowers5"  class="catalog-images"/>
             <h2>450 ₴</h2>
             <p></p>
           </li>
-          <li>
-            <img src="./images/flowers6.jpg" alt="flowers6" />
+          <li class="catalog-flower">
+            <img src="./images/flowers6.jpg" alt="flowers6"  class="catalog-images"/>
             <h2>56 ₴</h2>
             <p>Нобіліс</p>
           </li>
@@ -139,12 +139,12 @@
         <button type="button">Дивитись всі</button>
       </section>
       <!-- quality -->
-      <section>
-        <h2>Якість в деталях</h2>
-        <ul>
-          <li>
-            <h2>Контроль свіжості квітів</h2>
-            <p>
+      <section class="quality">
+        <h2 class="quality-heading">Якість в деталях</h2>
+        <ul class="quality-list">
+          <li class="quality-item">
+            <h2 class="quality-sublitle">Контроль свіжості квітів</h2>
+            <p class="quality-text">
               Ми співпрацюємо з кращими постачальниками квітів і готові
               запропонувати Вам широкий асортимент квітів, починаючи від
               місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
@@ -156,11 +156,12 @@
               width="659"
               height="477"
               alt="quality1"
+              class="quality-image"
             />
           </li>
-          <li>
-            <h2>Оформлення букетів</h2>
-            <p>
+          <li class="quality-item">
+            <h2 class="quality-sublitle">Оформлення букетів</h2>
+            <p class="quality-text">
               Ми готові зібрати унікальний букет по індивідуальному замовленню .
               Наші флористи втілять в життя будь яку Вашу ідею!
             </p>
@@ -169,11 +170,12 @@
               width="648"
               height="467"
               alt="quality2"
+              class="quality-image"
             />
           </li>
-          <li>
-            <h2>Швидка доставка</h2>
-            <p>
+          <li class="quality-item">
+            <h2 class="quality-sublitle">Швидка доставка</h2>
+            <p class="quality-text">
               Ми робимо доставки по Україні протягом 3-х годин з моменту оплати
               замовлення.
             </p>
@@ -182,45 +184,45 @@
               width="659"
               height="509"
               alt="quality3"
+              class="quality-image"
             />
           </li>
         </ul>
       </section>
       <!-- contacts -->
-      <section>
-        <h2>Не можете визначитись з вибором букету?</h2>
-        <div>
-            <form action="">
-                <h3>Відправте заявку </h3>
-                <p>
+      <section class="contacts">
+        <h2 class="contacts-title">Не можете визначитись з вибором букету?</h2>
+        <div class="contacts-box">
+                <h3 class="contacts-subtitle">Відправте заявку </h3>
+                <p class="contacts-subtext">
                     і Вам зателефонують 
                     протягом однієї хвилини</p>
-                    <ul>
-                        <li><input type="text" placeholder="Ім’я"></li>
-                        <li><input type="tel" placeholder="Телефон"></li>
+                    <ul class="contacts-list">
+                        <li class="contacts-item"><input class="contacts-input" type="text" placeholder="Ім’я"></li>
+                        <li class="contacts-item"><input class="contacts-input" type="tel" placeholder="Телефон"></li>
                     </ul>
-                    <button type="submit">Залишити заявку</button>
+                    <button class="contacts-btn" type="submit">Залишити заявку</button>
             </form>
-            <div>
-                <h3>Наш менеджер по телефону: </h3>
-                <ul>
-                    <li>
-                        <img src="./images/checkmark.png" alt="checkmark">
-                        <p>Відповість на будь які запитання</p>
+            <div class="contacts-content">
+                <h3 class="contacts-title">Наш менеджер по телефону: </h3>
+                <ul class="contacts-services">
+                    <li class="contacts-service">
+                        <img class="contacts-foto" src="./images/checkmark.png" alt="checkmark">
+                        <p class="contacts-text">Відповість на будь які запитання</p>
                     </li>
-                    <li>
-                        <img src="./images/checkmark.png" alt="checkmark">
-                        <p>Підбере рішення відповідно 
+                    <li class="contacts-service">
+                        <img class="contacts-foto" src="./images/checkmark.png" alt="checkmark">
+                        <p class="contacts-text">Підбере рішення відповідно 
                             до ваших запитів та бажань</p>
                     </li>
-                    <li>
-                        <img src="./images/checkmark.png" alt="checkmark">
-                        <p>Підготує унікальну пропозицію
+                    <li class="contacts-service">
+                        <img class="contacts-foto" src="./images/checkmark.png" alt="checkmark">
+                        <p class="contacts-text">Підготує унікальну пропозицію
                             та детально розповість Вам про наші букети</p>
                     </li>
-                    <li>
-                        <img src="./images/checkmark.png" alt="checkmark">
-                        <p>Оформить для Вас подарунок-сюрприз</p>
+                    <li class="contacts-service">
+                        <img class="contacts-foto" src="./images/checkmark.png" alt="checkmark">
+                        <p class="contacts-subtitle">Оформить для Вас подарунок-сюрприз</p>
                     </li>
                 </ul>
             </div>
