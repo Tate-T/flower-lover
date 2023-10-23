@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,13 +64,13 @@
         <h2 class="catalog-title">Каталог</h2>
         <h2 class="catalog-heading">Доставка квітів в Києві</h2>
         <div class="catalog-box">
-          <select id="size" name="size" class="catalog-list">
+          <select  name="price" class="catalog-list">
             <option value="xs" selected class="catalog-item">Ціна ...</option>
             <option value="s" class="catalog-item">Економ</option>
             <option value="m" class="catalog-item">Стандарт</option>
             <option value="l" class="catalog-item">Преміум</option>
           </select>
-          <select id="size" name="size" class="catalog-list">
+          <select  name="flowers" class="catalog-list">
             <option value="xs" selected class="catalog-item">Квіти ...</option>
             <option value="s" class="catalog-item">Троянди</option>
             <option value="m" class="catalog-item">Ромашки</option>
@@ -80,21 +80,21 @@
             <option value="e" class="catalog-item">Піони</option>
             <option value="d" class="catalog-item">Хрезантеми</option>
           </select>
-          <select id="size" name="size" class="catalog-list">
+          <select  name="to-who" class="catalog-list">
             <option value="xs" selected class="catalog-item">Кому ...</option>
             <option value="s" class="catalog-item">Рідним</option>
             <option value="m" class="catalog-item">Друзям</option>
             <option value="l" class="catalog-item">Колегам</option>
             <option value="w" class="catalog-item">Нареченим</option>
           </select>
-          <select id="size" name="size" class="catalog-list">
+          <select name="occasion" class="catalog-list">
             <option value="xs" selected class="catalog-item">Привід...</option>
             <option value="s" class="catalog-item">День народження</option>
             <option value="m" class="catalog-item">Христини</option>
             <option value="l" class="catalog-item">Весілля</option>
             <option value="" class="catalog-item">Просто так</option>
           </select>
-          <select id="size" name="size" class="catalog-list">
+          <select  name="style" class="catalog-list">
             <option value="xs" selected class="catalog-item">Стиль ...</option>
             <option value="s" class="catalog-item">Букет</option>
             <option value="m" class="catalog-item">Композиція</option>
@@ -139,12 +139,12 @@
         <button type="button">Дивитись всі</button>
       </section>
       <!-- quality -->
-      <section>
-        <h2>Якість в деталях</h2>
-        <ul>
-          <li>
-            <h2>Контроль свіжості квітів</h2>
-            <p>
+      <section class="quality">
+        <h2 class="quality-heading">Якість в деталях</h2>
+        <ul class="quality-list">
+          <li class="quality-item">
+            <h2 class="quality-sublitle">Контроль свіжості квітів</h2>
+            <p class="quality-text">
               Ми співпрацюємо з кращими постачальниками квітів і готові
               запропонувати Вам широкий асортимент квітів, починаючи від
               місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
@@ -156,11 +156,12 @@
               width="659"
               height="477"
               alt="quality1"
+              class="quality-image"
             />
           </li>
-          <li>
-            <h2>Оформлення букетів</h2>
-            <p>
+          <li class="quality-item">
+            <h2 class="quality-sublitle">Оформлення букетів</h2>
+            <p class="quality-text">
               Ми готові зібрати унікальний букет по індивідуальному замовленню .
               Наші флористи втілять в життя будь яку Вашу ідею!
             </p>
@@ -169,11 +170,12 @@
               width="648"
               height="467"
               alt="quality2"
+              class="quality-image"
             />
           </li>
-          <li>
-            <h2>Швидка доставка</h2>
-            <p>
+          <li class="quality-item">
+            <h2 class="quality-sublitle">Швидка доставка</h2>
+            <p class="quality-text">
               Ми робимо доставки по Україні протягом 3-х годин з моменту оплати
               замовлення.
             </p>
@@ -182,6 +184,7 @@
               width="659"
               height="509"
               alt="quality3"
+              class="quality-image"
             />
           </li>
         </ul>
@@ -190,7 +193,6 @@
       <section>
         <h2>Не можете визначитись з вибором букету?</h2>
         <div>
-            <form action="">
                 <h3>Відправте заявку </h3>
                 <p>
                     і Вам зателефонують 
