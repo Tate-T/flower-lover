@@ -1,6 +1,6 @@
 :root {
-    --accent-color:#A93B59;
-    --overlay-color:rgba(185, 106, 127, 0.50);
+    --accent-color: #A93B59;
+    --overlay-color: rgba(185, 106, 127, 0.50);
     --title-color: #FFF;
     --page-color: #000;
     --text-color: #444;
@@ -9,5 +9,43 @@
 
 }
 
+body {
+    background-color: var(--page-color);
+}
 
+.header-flowerlover {
+    color: var(--aditional-color);
+    text-align: center;
+    font-family: Spline Sans;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
+.header-link {
+    color: var(--aditional-color);
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hero-title {
+    color: var(--accent-color);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.hero-header {
+    color: var(--aditional-color);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+}
