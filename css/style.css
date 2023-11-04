@@ -5,6 +5,7 @@
   --page-color: #000;
   --text-color: #444;
   --aditional-color: #f5ebeb;
+  --contacts-form-color: rgba(255, 255, 255, 0.71);
 }
 
 body {
@@ -154,4 +155,39 @@ body {
   font-size: 32px;
   font-weight: 400;
   line-height: 1.25;
+}
+
+.contacts-content-title {
+  color: var(--title-color);
+text-align: center;
+font-size: 32px;
+font-weight: 400;
+line-height: 1.25;
+}
+
+.contacts-text {
+  color: var(--contacts-form-color);
+font-size: 20px;
+font-weight: 400;
+line-height: 1.25;
+}
+
+.client-title {
+  color: var(--accent-color);
+font-family: Playfair Display;
+font-size: 36px;
+font-weight: 600;
+line-height: 1.33;
+}
+
+.footer-link {
+  color: var(--aditional-color);
+text-align: center;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.25;
+}
+
+.footer-word {
+  
 }
