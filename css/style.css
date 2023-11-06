@@ -189,5 +189,26 @@ line-height: 1.25;
 }
 
 .footer-word {
-  
+color: var(--aditional-color);
+text-align: center;
+font-family: Spline Sans;
+font-size: 24px;
+font-weight: 400;
+line-height: 1.16;
+text-transform: uppercase;
+}
+
+.footer-connect {
+  color: var(--title-color);
+text-align: center;
+font-size: 24px;
+font-weight: 400;
+line-height: 1.25;
+}
+
+.footer-desc {
+color: var(--title-color);
+font-size: 20px;
+font-weight: 400;
+line-height: 1.25;
 }
