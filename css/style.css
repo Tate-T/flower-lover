@@ -212,3 +212,12 @@ font-size: 20px;
 font-weight: 400;
 line-height: 1.25;
 }
+
+.container{
+width: 1328px;
+padding-left: 8px;
+padding-right: 8px;
+outline: solid darkturquoise 2px ;
+margin: 0 auto;
+
+}
