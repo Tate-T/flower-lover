@@ -14,6 +14,27 @@ body {
   font-weight: 400;
 }
 
+.header {
+  padding-top: 24px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-flower {
+  width: 42px;
+  height: 39px;
+}
+
 .header-flowerlover {
   color: var(--aditional-color);
   text-align: center;
@@ -22,10 +43,21 @@ body {
   text-transform: uppercase;
 }
 
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .header-link {
   color: var(--aditional-color);
   text-align: center;
   font-size: 20px;
+}
+
+.hero {
+  padding-top: 109px;
+  padding-bottom: 94px;
 }
 
 .hero-title {
@@ -65,6 +97,10 @@ body {
   color: var(--title-color);
   font-size: 16px;
   text-transform: lowercase;
+}
+
+.catalog {
+  padding-bottom: 92px;
 }
 
 .catalog-title {
@@ -114,6 +150,10 @@ body {
   background: var(--title-color);
 }
 
+.quality {
+  padding-bottom: 132px;
+}
+
 .quality-heading {
   color: var(--accent-color);
   /* Н3 */
@@ -140,6 +180,10 @@ body {
 
 .bold-text {
   font-weight: 600;
+}
+
+.contacts {
+  padding-bottom: 121px;
 }
 
 .contacts-title {
@@ -172,6 +216,10 @@ font-weight: 400;
 line-height: 1.25;
 }
 
+.client-section {
+  padding-bottom: 124px;
+}
+
 .client-title {
   color: var(--accent-color);
 font-family: Playfair Display;
@@ -196,6 +244,11 @@ font-size: 24px;
 font-weight: 400;
 line-height: 1.16;
 text-transform: uppercase;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .footer-connect {
