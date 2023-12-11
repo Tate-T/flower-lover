@@ -62,12 +62,21 @@ body {
 
 .hero-title {
   color: var(--accent-color);
-  text-align: center;
   font-family: Playfair Display;
   font-size: 48px;
   font-style: italic;
   font-weight: 500;
   line-height: 1.25;
+}
+
+.header-box {
+  padding-left: 110px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
 }
 
 .hero-header {
@@ -77,12 +86,15 @@ body {
   font-size: 86px;
   line-height: 0.7;
   text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 24px;
 }
 
 .hero-text {
   color: var(--aditional-color);
   font-size: 24px;
   text-transform: capitalize;
+  margin-bottom: 42px;
 }
 
 .hero-button {
@@ -91,6 +103,8 @@ body {
   color: var(--aditional-color);
   text-align: center;
   font-size: 24px;
+  width: 437px;
+  height: 32px;
 }
 
 .hero-information {
@@ -203,17 +217,17 @@ body {
 
 .contacts-content-title {
   color: var(--title-color);
-text-align: center;
-font-size: 32px;
-font-weight: 400;
-line-height: 1.25;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.25;
 }
 
 .contacts-text {
   color: var(--contacts-form-color);
-font-size: 20px;
-font-weight: 400;
-line-height: 1.25;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
 }
 
 .client-section {
@@ -222,28 +236,28 @@ line-height: 1.25;
 
 .client-title {
   color: var(--accent-color);
-font-family: Playfair Display;
-font-size: 36px;
-font-weight: 600;
-line-height: 1.33;
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.33;
 }
 
 .footer-link {
   color: var(--aditional-color);
-text-align: center;
-font-size: 20px;
-font-weight: 400;
-line-height: 1.25;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
 }
 
 .footer-word {
-color: var(--aditional-color);
-text-align: center;
-font-family: Spline Sans;
-font-size: 24px;
-font-weight: 400;
-line-height: 1.16;
-text-transform: uppercase;
+  color: var(--aditional-color);
+  text-align: center;
+  font-family: Spline Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.16;
+  text-transform: uppercase;
 }
 
 .footer {
@@ -253,24 +267,23 @@ text-transform: uppercase;
 
 .footer-connect {
   color: var(--title-color);
-text-align: center;
-font-size: 24px;
-font-weight: 400;
-line-height: 1.25;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.25;
 }
 
 .footer-desc {
-color: var(--title-color);
-font-size: 20px;
-font-weight: 400;
-line-height: 1.25;
+  color: var(--title-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
 }
 
-.container{
-width: 1328px;
-padding-left: 8px;
-padding-right: 8px;
-outline: solid darkturquoise 2px ;
-margin: 0 auto;
-
+.container {
+  width: 1328px;
+  padding-left: 8px;
+  padding-right: 8px;
+  outline: solid darkturquoise 2px;
+  margin: 0 auto;
 }
