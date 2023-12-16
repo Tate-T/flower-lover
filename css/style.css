@@ -115,6 +115,7 @@ body {
 
 .catalog {
   padding-bottom: 92px;
+  padding-top: 44px;
 }
 
 .catalog-title {
@@ -123,6 +124,9 @@ body {
   font-family: Playfair Display;
   font-size: 36px;
   font-weight: 600;
+  display: flex;
+  padding-left: 285px;
+  margin-bottom: 101px;
 }
 
 .catalog-heading {
@@ -131,12 +135,37 @@ body {
   font-family: Playfair Display;
   font-size: 36px;
   font-weight: 600;
+  margin-bottom: 20px;
+line-height: 1.33;
+}
+
+.catalog-box {
+  border-radius: 15px;
+  background: #B96A7F;
+  display: flex;
+width: 1085px;
+padding: 20.5px 25px;
+justify-content: space-between;
+align-items: center;
+margin: 0 auto;
+}
+
+.catalog-list {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
 }
 
 .catalog-item {
   color: var(--title-color);
   font-size: 18px;
   font-weight: 300;
+}
+
+.catalog-background {
+  border-radius: 15px;
+background: rgba(185, 106, 127, 0.50);
+margin-bottom: 50px;
 }
 
 .catalog-price {
@@ -159,9 +188,21 @@ body {
   text-transform: uppercase;
 }
 
+
+.catalog-flowers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  outline: solid pink 2px;
+  width: 1110px;
+  margin: 0 auto;
+gap: 30px;
+}
+
 .catalog-flower {
   border-radius: 15px;
   background: var(--title-color);
+  width: 290px;
 }
 
 .quality {
