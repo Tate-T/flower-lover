@@ -127,7 +127,7 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 32px;
-  padding-right: 32px; 
+  padding-right: 32px;
   /* text-align: center; */
 
 }
@@ -206,9 +206,10 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 150% */
+  line-height: 30px;
+  /* 150% */
   text-decoration-line: line-through;
-  
+
 }
 
 .catalog-boxies {
@@ -396,4 +397,76 @@ body {
   padding-right: 8px;
   outline: solid darkturquoise 2px;
   margin: 0 auto;
+}
+
+.contacts-box {
+  display: flex;
+  margin-top: 140px;
+  justify-content: center;
+}
+
+.contacts-content {
+  display: flex;
+  padding: 40px 60px 13px 6px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 39px;
+  margin-left: 242px;
+  max-width: 535px;
+}
+
+.contacts-info {
+  max-width: 535px;
+}
+
+.contacts-subtitle {
+  margin-bottom: 40px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.contacts-input {
+  border-radius: 15px;
+  background: #FFF;
+  padding: 22px 39px 23px 38px;
+  width: 416px;
+}
+
+.contacts-btn {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  width: 416px;
+  padding: 16px 116px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 15px;
+  background: var(--button-and-text-color, #A93B59);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 6px 0px 12px 0px rgba(0, 0, 0, 0.10), 23px 0px 23px 0px rgba(0, 0, 0, 0.09), 51px 0px 31px 0px rgba(0, 0, 0, 0.05), 91px 0px 36px 0px rgba(0, 0, 0, 0.01), 142px 0px 40px 0px rgba(0, 0, 0, 0.00);
+}
+
+.contacts-service {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.contacts-services {
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
+}
+
+.bold-text {
+  display: block;
+}
+
+.contacts-form {
+  padding: 36px 64px 86px 55px;
 }
