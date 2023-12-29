@@ -353,6 +353,31 @@ body {
   line-height: 1.33;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  outline: blue solid;
+}
+
+.footer-box {
+  margin-left: 298px;
+  margin-right: 217px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+  margin-top: 32px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .footer-link {
   color: var(--aditional-color);
   text-align: center;
@@ -360,6 +385,21 @@ body {
   font-weight: 400;
   line-height: 1.25;
 }
+.footer-logo{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; 
+}
+.footer-icon{
+  width: 40px;
+  height: 40px;
+}
+.footer-picture{
+  width: 88px;
+  height: 84px;
+}
+ 
 
 .footer-word {
   color: var(--aditional-color);
@@ -471,7 +511,7 @@ body {
   padding: 36px 64px 86px 55px;
 }
 
-.client-section{
+.client-section {
   padding-top: 121px;
 }
 
