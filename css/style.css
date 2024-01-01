@@ -470,3 +470,29 @@ body {
 .contacts-form {
   padding: 36px 64px 86px 55px;
 }
+
+.client-section{
+  padding-top: 121px;
+}
+
+.client-title {
+  text-align: end;
+  margin-bottom: 140px;
+  padding-right: 169px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* :root {
+  --accent-color: #a93b59;
+  --overlay-color: rgba(185, 106, 127, 0.5);
+  --title-color: #fff;
+  --page-color: #000;
+  --text-color: #444;
+  --aditional-color: #f5ebeb;
+  --contacts-form-color: rgba(255, 255, 255, 0.71);
+} */
