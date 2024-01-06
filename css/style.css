@@ -8,6 +8,15 @@
   --contacts-form-color: rgba(255, 255, 255, 0.71);
 }
 
+.container {
+  max-width: 1328px;
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  outline: solid darkturquoise 2px;
+  margin: 0 auto;
+}
+
 body {
   background-color: var(--page-color);
   font-family: "Source Sans 3", sans-serif;
@@ -143,6 +152,9 @@ body {
   padding-top: 44px;
 }
 
+.catalog .container{
+}
+
 .catalog-title {
   color: var(--accent-color);
   text-align: center;
@@ -234,16 +246,23 @@ body {
   line-height: 1.25;
   letter-spacing: 1.6px;
   text-transform: uppercase;
+  padding: 15px 30px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid #FFF;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 104px;
 }
 
 .catalog-flowers {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  outline: solid pink 2px;
+  justify-content: center;
+  gap: 30px;
   width: 1110px;
   margin: 0 auto;
-  gap: 30px;
 }
 
 .catalog-flower {
@@ -251,6 +270,8 @@ body {
   background: var(--title-color);
   width: 290px;
   overflow: hidden;
+  flex-basis: calc((100% - (30px * 2)) / 3);
+  padding-bottom: 20px;
 }
 
 .quality {
@@ -431,13 +452,7 @@ align-items: center;
   line-height: 1.25;
 }
 
-.container {
-  width: 1328px;
-  padding-left: 8px;
-  padding-right: 8px;
-  outline: solid darkturquoise 2px;
-  margin: 0 auto;
-}
+
 
 .contacts-box {
   display: flex;
