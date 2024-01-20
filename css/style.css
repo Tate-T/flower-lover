@@ -67,7 +67,7 @@ body {
 .hero {
   padding-top: 109px;
   padding-bottom: 94px;
-  background-image: url(../images/flowershero.png);
+  background-image: url(../images/flowershero.webp);
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -279,7 +279,6 @@ body {
 
 .quality-heading {
   color: var(--accent-color);
-  /* Н3 */
   font-family: Playfair Display;
   font-size: 36px;
   font-style: normal;
@@ -291,6 +290,8 @@ body {
 
 .quality-item {
   display: flex;
+
+  justify-content: space-between;
 }
 
 .quality-item:nth-child(odd) {
@@ -300,6 +301,8 @@ body {
 .quality-info {
   margin-left: 120px;
   padding-top: 69px;
+  min-width: 527px;
+
 }
 
 .quality-item:nth-child(even) .quality-info {
