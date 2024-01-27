@@ -150,6 +150,9 @@ body {
 .catalog {
   padding-bottom: 92px;
   padding-top: 44px;
+  background-image: url(../images/flower-section.png);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 
@@ -184,6 +187,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+
 }
 
 .catalog-list {
@@ -332,6 +336,16 @@ body {
 
 .contacts {
   padding-bottom: 121px;
+ 
+  
+}
+
+
+.flower-background {
+  background-image: linear-gradient( rgba(185, 106, 127, 0.70),  rgba(185, 106, 127, 0.70)),  url(../images/flower-form.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 564px, 776px 1104px;
+  background-position: 0% 190px, left -30px;
 }
 
 .contacts-title {
@@ -374,6 +388,7 @@ body {
   font-size: 36px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 140px;
 }
 
 .footer-container {
