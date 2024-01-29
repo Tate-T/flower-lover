@@ -67,9 +67,9 @@ body {
 .hero {
   padding-top: 109px;
   padding-bottom: 94px;
-  background-image: url(../images/flowershero.webp);
+  background-image: url(../images/flowershero.webp) , url(../images/Ellipse4.webp);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: 900px 150px , 800px  350px ;
 }
 
 .hero-title {
@@ -85,6 +85,14 @@ body {
   display: flex;
   gap: 124px;
   justify-content: center;
+}
+
+.hero-icon{
+  width: 40px;
+height: 40px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 2px;
 }
 
 
@@ -150,9 +158,10 @@ body {
 .catalog {
   padding-bottom: 92px;
   padding-top: 44px;
-  background-image: url(../images/flower-section.png);
+  background-image: url(../images/flower-section.png) ;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right  ;
+  background-size: contain;
 }
 
 
@@ -163,9 +172,18 @@ body {
   font-family: Playfair Display;
   font-size: 36px;
   font-weight: 600;
-  display: flex;
   padding-left: 285px;
   margin-bottom: 101px;
+}
+
+
+.catalog-title::after{
+  content: "";
+  display: block;
+  background-color: #B02E51;
+  width: 491.001px;
+height: 2px;
+margin-right: auto;
 }
 
 .catalog-heading {
@@ -292,6 +310,16 @@ body {
   padding-right: 136px;
 }
 
+
+.quality-heading::after{
+  display: block;
+  content: "";
+  width: 494.089px;
+height: 2px;
+background-color: #B02E51;
+margin-left: auto;
+} 
+
 .quality-item {
   display: flex;
 
@@ -312,6 +340,11 @@ body {
 .quality-item:nth-child(even) .quality-info {
   margin-right: 120px;
   margin-left: 0;
+}
+
+
+.quality-image{
+  width: 648px;
 }
 
 .quality-sublitle {
@@ -335,9 +368,6 @@ body {
 }
 
 .contacts {
-  padding-bottom: 121px;
- 
-  
 }
 
 
@@ -345,7 +375,8 @@ body {
   background-image: linear-gradient( rgba(185, 106, 127, 0.70),  rgba(185, 106, 127, 0.70)),  url(../images/flower-form.webp);
   background-repeat: no-repeat;
   background-size: 100% 564px, 776px 1104px;
-  background-position: 0% 190px, left -30px;
+  background-position: 0% 190px, left -10px;
+
 }
 
 .contacts-title {
@@ -354,6 +385,14 @@ body {
   font-size: 36px;
   font-weight: 600;
   line-height: 1.33;
+}
+
+.contacts-title::after{
+  display: block;
+  content: "";
+  width: 823px;
+height: 2px;
+background-color: #B02E51;
 }
 
 .contacts-subtitle {
@@ -387,14 +426,33 @@ body {
   font-family: Playfair Display;
   font-size: 36px;
   font-weight: 600;
-  line-height: 1.33;
+  line-height: 48px;
   margin-bottom: 140px;
 }
+
+.client-title::after{
+  content: "";
+  display:block;
+  margin-left: auto;
+  width: 488px;
+height: 2px;
+background-color: #B02E51;
+}
+
+.footer{
+  border-top: 2px solid var(--accent-color, #A93B59);
+}
+
+
+
 
 .footer-container {
   display: flex;
   justify-content: center;
 }
+
+
+
 
 /* footer div {
   outline: blue solid;
@@ -496,7 +554,7 @@ body {
   padding: 40px 60px 13px 6px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 39px;
+  gap: 39px;ntacts-input
   margin-left: 242px;
   max-width: 535px;
 }
@@ -521,6 +579,7 @@ body {
   background: #FFF;
   padding: 22px 39px 23px 38px;
   width: 416px;
+ border: none;
 }
 
 .contacts-btn {
@@ -542,6 +601,12 @@ body {
   align-items: center;
   gap: 32px;
 }
+
+.contacts-foto{
+  width: 48px;
+height: 48px;
+}
+
 
 .contacts-services {
   display: flex;
