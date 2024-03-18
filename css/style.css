@@ -492,6 +492,7 @@ background-color: #B02E51;
 .footer-icon {
   width: 40px;
   height: 40px;
+  fill:var(--accent-color);
 }
 
 .footer-picture {
@@ -554,7 +555,7 @@ background-color: #B02E51;
   padding: 40px 60px 13px 6px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 39px;ntacts-input
+  gap: 39px;
   margin-left: 242px;
   max-width: 535px;
 }
