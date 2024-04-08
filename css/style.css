@@ -167,23 +167,28 @@ margin-bottom: 2px;
 
 
 .catalog-title {
+  
   color: var(--accent-color);
-  text-align: center;
+  position: relative;
   font-family: Playfair Display;
   font-size: 36px;
   font-weight: 600;
-  padding-left: 285px;
   margin-bottom: 101px;
+  padding-left: 349px;
 }
 
 
 .catalog-title::after{
   content: "";
+
   display: block;
+  position: absolute;
+  left: 0px;
   background-color: #B02E51;
   width: 491.001px;
 height: 2px;
 margin-right: auto;
+
 }
 
 .catalog-heading {
@@ -200,12 +205,33 @@ margin-right: auto;
   border-radius: 15px;
   background: #b96a7f;
   display: flex;
-  width: 1085px;
+  max-width: 1085px;
   padding: 20.5px 25px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 
+}
+
+.catalog-svg{
+  fill: #B02E51;
+  width: 28px;
+  height: 28px;
+  
+}
+
+.catalog-svg:hover{
+  stroke: #B02E51;
+  
+}
+
+.catalog-heart{
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  position: absolute;
+  right: 15px;
+  top: 14px;
 }
 
 .catalog-list {
@@ -215,6 +241,7 @@ margin-right: auto;
 }
 
 .catalog-item {
+  
   color: var(--title-color);
   font-size: 18px;
   font-weight: 300;
@@ -224,6 +251,8 @@ margin-right: auto;
   border-radius: 15px;
   background: rgba(185, 106, 127, 0.5);
   margin-bottom: 50px;
+  max-width: 1085px;
+ margin: 0 auto;
 }
 
 .catalog-price {
@@ -284,15 +313,19 @@ margin-right: auto;
   gap: 30px;
   width: 1110px;
   margin: 0 auto;
+  
 }
 
 .catalog-flower {
   border-radius: 15px;
   background: var(--title-color);
-  width: 290px;
+  position: relative;
   overflow: hidden;
-  flex-basis: calc((100% - (30px * 2)) / 3);
+
   padding-bottom: 20px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .quality {
