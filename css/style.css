@@ -12,8 +12,7 @@
 .container {
   max-width: 1328px;
   width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 0 15px;
   /* outline: solid darkturquoise 2px; */
   margin: 0 auto;
 }
@@ -40,16 +39,66 @@ body {
   align-items: center;
 }
 
+/* ........................... */
+
+.is-open {
+  /* opacity: 0; */
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.js-menu-container .is-open {
+  transform: translateX(-50%);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .js-menu-container {
+  position: relative;
+  right: 0;
   background-color: rgba(185, 106, 127, 0.70);
-  width: 390px;
+  width: 50%;
+  height: 100%;
   position: absolute;
+  padding: 40px 15px;
+  /* transform: translateX(100%); */
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close {
+  background: none;
+  top: 10px;
+  position: absolute;
+  right: 15px;
 }
 
 .close-icon {
+  stroke: white;
+  fill: none;
   width: 24px;
   height: 24px;
 }
+
+.mobile-menu-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+.menu-text {
+  color: #F5EBEB;
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+/* ....................... */
 
 .header-icon {
   width: 42px;
@@ -431,9 +480,6 @@ body {
   font-weight: 600;
 }
 
-.contacts {}
-
-
 .flower-background {
   background-image: linear-gradient(rgba(185, 106, 127, 0.70), rgba(185, 106, 127, 0.70)), url(../images/flower-form.webp);
   background-repeat: no-repeat;
@@ -755,7 +801,7 @@ body {
   height: 40px;
 }
 
-.is-hidden{
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -789,4 +835,3 @@ body {
   margin-right: auto;
   margin-top: 16px;
 }
-
