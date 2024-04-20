@@ -8,7 +8,6 @@
   --contacts-form-color: rgba(255, 255, 255, 0.71);
 }
 
-
 .container {
   max-width: 1328px;
   width: 100%;
@@ -49,19 +48,21 @@ body {
 
 .js-menu-container .is-open {
   transform: translateX(-50%);
-  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .js-menu-container {
   position: relative;
   right: 0;
-  background-color: rgba(185, 106, 127, 0.70);
+  background-color: rgba(185, 106, 127, 0.7);
   width: 50%;
   height: 100%;
   position: absolute;
   padding: 40px 15px;
   /* transform: translateX(100%); */
-  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-close {
@@ -85,10 +86,8 @@ body {
   gap: 20px;
 }
 
-
-
 .menu-text {
-  color: #F5EBEB;
+  color: #f5ebeb;
   text-align: center;
   font-family: "Source Sans Pro";
   font-size: 30px;
@@ -97,13 +96,12 @@ body {
   line-height: normal;
 }
 
-
 /* ....................... */
 
 .header-icon {
   width: 42px;
   height: 42px;
-  stroke: #F5EBEB;
+  stroke: #f5ebeb;
 }
 
 @media screen and (min-width: 768px) {
@@ -115,7 +113,6 @@ body {
 .header-button {
   background: transparent;
   margin-left: auto;
-
 }
 
 .header-flower {
@@ -130,7 +127,6 @@ body {
   font-size: 16px;
   text-transform: uppercase;
 }
-
 
 .header-list {
   display: none;
@@ -147,7 +143,8 @@ body {
 .hero {
   padding-top: 109px;
   padding-bottom: 94px;
-  background-image: url(../images/flowershero.webp), url(../images/Ellipse4.webp);
+  background-image: url(../images/flowershero.webp),
+    url(../images/Ellipse4.webp);
   background-repeat: no-repeat;
   background-position: 900px 150px, 800px 350px;
 }
@@ -174,8 +171,6 @@ body {
   margin-right: auto;
   margin-bottom: 2px;
 }
-
-
 
 .hero-item {
   /* outline: #b96a7f solid; */
@@ -226,7 +221,6 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   /* text-align: center; */
-
 }
 
 .hero-information {
@@ -244,10 +238,7 @@ body {
   background-size: contain;
 }
 
-
-
 .catalog-title {
-
   color: var(--accent-color);
   position: relative;
   font-family: Playfair Display;
@@ -257,18 +248,16 @@ body {
   padding-left: 349px;
 }
 
-
 .catalog-title::after {
   content: "";
 
   display: block;
   position: absolute;
   left: 0px;
-  background-color: #B02E51;
+  background-color: #b02e51;
   width: 491.001px;
   height: 2px;
   margin-right: auto;
-
 }
 
 .catalog-heading {
@@ -290,19 +279,16 @@ body {
   justify-content: space-between;
   align-items: center;
   /* margin: 0 auto; */
-
 }
 
 .catalog-svg {
-  fill: #B02E51;
+  fill: #b02e51;
   width: 28px;
   height: 28px;
-
 }
 
 .catalog-svg:hover {
-  stroke: #B02E51;
-
+  stroke: #b02e51;
 }
 
 .catalog-heart {
@@ -321,7 +307,6 @@ body {
 }
 
 .catalog-item {
-
   color: var(--title-color);
   font-size: 18px;
   font-weight: 300;
@@ -351,7 +336,6 @@ body {
   line-height: 30px;
   /* 150% */
   text-decoration-line: line-through;
-
 }
 
 .catalog-boxies {
@@ -379,7 +363,7 @@ body {
   padding: 15px 30px;
   background-color: transparent;
   border-radius: 15px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -393,7 +377,6 @@ body {
   gap: 30px;
   width: 1110px;
   margin: 0 auto;
-
 }
 
 .catalog-flower {
@@ -406,7 +389,77 @@ body {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
 }
+
+.catalog-overlay {
+  background: rgba(185, 106, 127, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+}
+
+.catalog-flower:hover .catalog-overlay{
+  opacity: 1;
+}
+
+.catalog-infos {
+  background: #b96a7f;
+  width: 290px;
+  height: 46px;
+  padding: 15px;
+}
+
+.catalog-text {
+
+  width: 290px;
+  height: 46px;
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.catalog-forms {
+  display: flex;
+padding: 25px 15px 15px 15px;
+align-items: center;
+gap: 10px;
+background-color: #fff;
+}
+
+.catalog-form {
+
+  width: 116px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #E6E6E6;
+}
+
+.catalog-button {
+  width: 96px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background:  #A93B59;
+
+
+
+color: #FFF;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px; /* 200% */
+}
+
+
 
 .quality {
   padding-bottom: 132px;
@@ -423,13 +476,12 @@ body {
   padding-right: 136px;
 }
 
-
 .quality-heading::after {
   display: block;
   content: "";
   width: 494.089px;
   height: 2px;
-  background-color: #B02E51;
+  background-color: #b02e51;
   margin-left: auto;
 }
 
@@ -447,14 +499,12 @@ body {
   margin-left: 120px;
   padding-top: 69px;
   min-width: 527px;
-
 }
 
 .quality-item:nth-child(even) .quality-info {
   margin-right: 120px;
   margin-left: 0;
 }
-
 
 .quality-image {
   width: 648px;
@@ -481,11 +531,14 @@ body {
 }
 
 .flower-background {
-  background-image: linear-gradient(rgba(185, 106, 127, 0.70), rgba(185, 106, 127, 0.70)), url(../images/flower-form.webp);
+  background-image: linear-gradient(
+      rgba(185, 106, 127, 0.7),
+      rgba(185, 106, 127, 0.7)
+    ),
+    url(../images/flower-form.webp);
   background-repeat: no-repeat;
   background-size: 100% 564px, 776px 1104px;
   background-position: 0% 190px, left -10px;
-
 }
 
 .contacts-title {
@@ -501,7 +554,7 @@ body {
   content: "";
   width: 823px;
   height: 2px;
-  background-color: #B02E51;
+  background-color: #b02e51;
 }
 
 .contacts-subtitle {
@@ -545,23 +598,17 @@ body {
   margin-left: auto;
   width: 488px;
   height: 2px;
-  background-color: #B02E51;
+  background-color: #b02e51;
 }
 
 .footer {
-  border-top: 2px solid var(--accent-color, #A93B59);
+  border-top: 2px solid var(--accent-color, #a93b59);
 }
-
-
-
 
 .footer-container {
   display: flex;
   justify-content: center;
 }
-
-
-
 
 /* footer div {
   outline: blue solid;
@@ -609,7 +656,6 @@ body {
   height: 84px;
 }
 
-
 .footer-word {
   color: var(--aditional-color);
   text-align: center;
@@ -651,8 +697,6 @@ body {
   gap: 24px;
 }
 
-
-
 .contacts-box {
   display: flex;
   margin-top: 140px;
@@ -686,14 +730,14 @@ body {
 
 .contacts-input {
   border-radius: 15px;
-  background: #FFF;
+  background: #fff;
   padding: 22px 39px 23px 38px;
   width: 416px;
   border: none;
 }
 
 .contacts-btn {
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
   font-weight: 400;
   display: flex;
@@ -702,8 +746,11 @@ body {
   align-items: flex-start;
   gap: 16px;
   border-radius: 15px;
-  background: var(--button-and-text-color, #A93B59);
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 6px 0px 12px 0px rgba(0, 0, 0, 0.10), 23px 0px 23px 0px rgba(0, 0, 0, 0.09), 51px 0px 31px 0px rgba(0, 0, 0, 0.05), 91px 0px 36px 0px rgba(0, 0, 0, 0.01), 142px 0px 40px 0px rgba(0, 0, 0, 0.00);
+  background: var(--button-and-text-color, #a93b59);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    6px 0px 12px 0px rgba(0, 0, 0, 0.1), 23px 0px 23px 0px rgba(0, 0, 0, 0.09),
+    51px 0px 31px 0px rgba(0, 0, 0, 0.05), 91px 0px 36px 0px rgba(0, 0, 0, 0.01),
+    142px 0px 40px 0px rgba(0, 0, 0, 0);
 }
 
 .contacts-service {
@@ -716,7 +763,6 @@ body {
   width: 48px;
   height: 48px;
 }
-
 
 .contacts-services {
   display: flex;
@@ -747,7 +793,6 @@ body {
   justify-content: space-between;
 }
 
-
 /* :root {
   --accent-color: #a93b59;
   --overlay-color: rgba(185, 106, 127, 0.5);
@@ -763,12 +808,11 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.70);
+  background: rgba(255, 255, 255, 0.7);
   position: fixed;
   left: 0px;
   top: 0px;
   backdrop-filter: blur(3px);
-
 }
 
 .modal {
@@ -777,7 +821,7 @@ body {
   height: 564px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: rgba(185, 106, 127, 0.70);
+  background: rgba(185, 106, 127, 0.7);
   text-align: center;
   padding-top: 40px;
   padding-right: 40px;
@@ -785,7 +829,7 @@ body {
 }
 
 .backdrop-svg {
-  stroke: #A93B59;
+  stroke: #a93b59;
   fill: transparent;
   width: 24px;
   height: 24px;
@@ -830,7 +874,7 @@ body {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #B02E51;
+  background-color: #b02e51;
   margin-left: auto;
   margin-right: auto;
   margin-top: 16px;
