@@ -931,3 +931,27 @@ body {
   align-items: center;
   color: white;
 }
+
+/* навігаційний лист */
+
+.header-catalog{
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 16px;
+  right: 0;
+  margin-top: 16px;
+  background-color: #A93B59;
+}
+
+.header-decor{
+  display: block;
+}
+
+.header-decor:hover + .header-catalog{
+  opacity: 1;
+}
+
+.header-section{
+  color: var(--title-color);
+}
