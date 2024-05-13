@@ -479,13 +479,15 @@ body {
   left: 0px;
   top: 0px;
   opacity: 0;
-  transition-property: opacity;
+  transition-property: opacity, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(800px);
 }
 
 .catalog-flower:hover .catalog-overlay{
   opacity: 1;
+  transform: translateY(0px);
 }
 
 .catalog-infos {
