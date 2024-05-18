@@ -217,15 +217,24 @@ body {
   background-position: 900px 150px, 800px 350px;
 }
 
-.hero-title {
+.hero-title{
   color: var(--accent-color);
   font-family: Playfair Display;
   font-size: 48px;
   font-style: italic;
   font-weight: 500;
   line-height: 1.25;
+animation-name: run-word;
+animation-duration: 3s;
 }
-
+@keyframes run-word{
+  0%{
+  transform: translateY(-75px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
 .hero-list {
   display: flex;
   gap: 124px;
@@ -267,8 +276,17 @@ body {
   text-transform: uppercase;
   margin-top: 12px;
   margin-bottom: 24px;
+  animation-name: run-title;
+animation-duration: 3s;
 }
-
+@keyframes run-title{
+  0%{
+  transform: translateX(-75px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
 .hero-text {
   color: var(--aditional-color);
   font-size: 24px;
@@ -289,6 +307,8 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation-name: run-button;
+animation-duration: 3s;
 }
 
 .hero-button:hover {
@@ -296,7 +316,14 @@ body {
   color: var(--accent-color);
   transform: scale(1.05);
 }
-
+@keyframes run-button{
+  0%{
+  transform: translateY(75px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
 .hero-information {
   color: var(--title-color);
   font-size: 16px;
