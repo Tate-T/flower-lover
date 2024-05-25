@@ -1,0 +1,96 @@
+.hero {
+  padding-top: 109px;
+  padding-bottom: 94px;
+  background-image: url(../images/flowershero.webp),
+    url(../images/Ellipse4.webp);
+  background-repeat: no-repeat;
+  background-position: 900px 150px, 800px 350px;
+}
+
+.hero-title {
+  color: var(--accent-color);
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.25;
+  animation-name: run-word;
+  animation-duration: 3s;
+}
+
+.hero-list {
+  display: flex;
+  gap: 124px;
+  justify-content: center;
+}
+
+.hero-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+}
+
+.hero-item {
+  /* outline: #b96a7f solid; */
+  width: 201px;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.hero-header {
+  color: var(--aditional-color);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 86px;
+  font-weight: 400;
+  line-height: 0.7;
+  text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  animation-name: run-title;
+  animation-duration: 3s;
+}
+
+.hero-text {
+  color: var(--aditional-color);
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 42px;
+}
+
+.hero-button {
+  border-radius: 15px;
+  background: var(--accent-color);
+  color: var(--aditional-color);
+  text-align: center;
+  font-size: 24px;
+  width: 437px;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation-name: run-button;
+  animation-duration: 3s;
+}
+
+.hero-button:hover {
+  background-color: var(--aditional-color);
+  color: var(--accent-color);
+  transform: scale(1.05);
+}
+.hero-information {
+  color: var(--title-color);
+  font-size: 16px;
+  text-transform: lowercase;
+}
