@@ -58,7 +58,7 @@
   }
   
   .modal-title {
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: "Playfair Display";
     font-size: 48px;
     font-style: italic;
@@ -69,7 +69,7 @@
   }
   
   .modal-description {
-    color: var(--title-color);
+    color: $title-color;
     font-family: "Source Sans Pro";
     font-size: 32px;
     font-weight: 600;

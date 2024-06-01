@@ -948,7 +948,7 @@ body {
 }
 
 .is-open {
-  /* opacity: 0; */
+  opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
@@ -959,12 +959,11 @@ body {
 }
 
 .js-menu-container {
-  position: relative;
+  position: fixed;
   right: 0;
   background-color: rgba(185, 106, 127, 0.7);
   width: 50%;
   height: 100%;
-  position: absolute;
   padding: 40px 15px;
   /* transform: translateX(100%); */
   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);

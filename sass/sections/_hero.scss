@@ -8,7 +8,7 @@
 }
 
 .hero-title {
-  color: var(--accent-color);
+  color: $accent-color;
   font-family: Playfair Display;
   font-size: 48px;
   font-style: italic;
@@ -45,7 +45,7 @@
 }
 
 .hero-header {
-  color: var(--aditional-color);
+  color: $aditional-color;
   text-align: center;
   font-family: Playfair Display;
   font-size: 86px;
@@ -59,7 +59,7 @@
 }
 
 .hero-text {
-  color: var(--aditional-color);
+  color: $aditional-color;
   font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 42px;
@@ -67,8 +67,8 @@
 
 .hero-button {
   border-radius: 15px;
-  background: var(--accent-color);
-  color: var(--aditional-color);
+  background: $accent-color;
+  color: $aditional-color;
   text-align: center;
   font-size: 24px;
   width: 437px;
@@ -85,12 +85,12 @@
 }
 
 .hero-button:hover {
-  background-color: var(--aditional-color);
-  color: var(--accent-color);
+  background-color: $aditional-color;
+  color: $accent-color;
   transform: scale(1.05);
 }
 .hero-information {
-  color: var(--title-color);
+  color: $title-color;
   font-size: 16px;
   text-transform: lowercase;
 }

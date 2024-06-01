@@ -8,7 +8,7 @@
 }
 
 .catalog-title {
-  color: var(--accent-color);
+  color: $accent-color;
   position: relative;
   font-family: Playfair Display;
   font-size: 36px;
@@ -30,7 +30,7 @@
 }
 
 .catalog-heading {
-  color: var(--title-color);
+  color: $title-color;
   text-align: center;
   font-family: Playfair Display;
   font-size: 36px;
@@ -79,7 +79,7 @@
 }
 
 .catalog-item {
-  color: var(--title-color);
+  color: $title-color;
   font-size: 18px;
   font-weight: 300;
 }
@@ -93,7 +93,7 @@
 }
 
 .catalog-price {
-  color: var(--page-color);
+  color:$page-color;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -118,7 +118,7 @@
 }
 
 .catalog-info {
-  color: var(--text-color);
+  color: $text-color;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 300;
@@ -127,7 +127,7 @@
 }
 
 .catalog-button {
-  color: var(--aditional-color);
+  color: $aditional-color;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 1.6px;
@@ -153,7 +153,7 @@
 
 .catalog-flower {
   border-radius: 15px;
-  background: var(--title-color);
+  background: $title-color;
   position: relative;
   overflow: hidden;
 
