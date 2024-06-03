@@ -1,13 +1,3 @@
-:root {
-  --accent-color: #a93b59;
-  --overlay-color: rgba(185, 106, 127, 0.5);
-  --title-color: #fff;
-  --page-color: #000;
-  --text-color: #444;
-  --aditional-color: #f5ebeb;
-  --contacts-form-color: rgba(255, 255, 255, 0.71);
-}
-
 h1,
 h2,
 h3,
@@ -77,7 +67,7 @@ html {
 }
 
 body {
-  background-color: var(--page-color);
+  background-color: #000;
   font-family: "Source Sans 3", sans-serif;
   font-weight: 400;
 }
@@ -89,30 +79,46 @@ body {
 .header {
   padding-top: 24px;
 }
-
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.header-logo {
+.header__logo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.header-icon {
+.header__flower {
+  width: 42px;
+  height: 39px;
+}
+.header__flowerlover {
+  color: #f5ebeb;
+  text-align: center;
+  font-family: Spline Sans;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.header__button {
+  background: transparent;
+  margin-left: auto;
+}
+.header__icon {
   width: 42px;
   height: 42px;
   stroke: #f5ebeb;
 }
-
-.header-item {
+.header__list {
+  /* display: none; */
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.header__item {
   position: relative;
 }
-
-.header-active::after {
+.header__active::after {
   content: "";
   background-color: #a93b59;
   width: 100%;
@@ -122,8 +128,12 @@ body {
   top: 35px;
   left: 0px;
 }
-
-.header-link::after {
+.header__link {
+  color: #f5ebeb;
+  text-align: center;
+  font-size: 20px;
+}
+.header__link::after {
   content: "";
   background-color: #a93b59;
   width: 100%;
@@ -137,12 +147,10 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-link:hover::after {
+.header__link:hover::after {
   opacity: 1;
 }
-
-.header-catalog {
+.header__catalog {
   width: 100%;
   opacity: 0;
   position: absolute;
@@ -154,60 +162,25 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-decor {
+.header__decor {
   display: block;
 }
-
-.header-decor:hover + .header-catalog {
+.header__decor:hover + .header__catalog {
   opacity: 1;
 }
-
-.header-section {
-  color: var(--title-color);
+.header__menu {
+  color: #fff;
 }
-
-@media screen and (min-width: 768px) {
-  .header-button {
-    display: none;
-  }
-}
-.header-button {
-  background: transparent;
-  margin-left: auto;
-}
-
-.header-flower {
-  width: 42px;
-  height: 39px;
-}
-
-.header-flowerlover {
-  color: var(--aditional-color);
-  text-align: center;
-  font-family: Spline Sans;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.header-list {
-  /* display: none; */
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-.header-link {
-  color: var(--aditional-color);
-  text-align: center;
-  font-size: 20px;
-}
-
-.header-box {
+.header__box {
   padding-left: 110px;
   margin-bottom: 437px;
 }
 
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
 .hero {
   padding-top: 109px;
   padding-bottom: 94px;
@@ -217,7 +190,7 @@ body {
 }
 
 .hero-title {
-  color: var(--accent-color);
+  color: #a93b59;
   font-family: Playfair Display;
   font-size: 48px;
   font-style: italic;
@@ -254,7 +227,7 @@ body {
 }
 
 .hero-header {
-  color: var(--aditional-color);
+  color: #f5ebeb;
   text-align: center;
   font-family: Playfair Display;
   font-size: 86px;
@@ -268,7 +241,7 @@ body {
 }
 
 .hero-text {
-  color: var(--aditional-color);
+  color: #f5ebeb;
   font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 42px;
@@ -276,8 +249,8 @@ body {
 
 .hero-button {
   border-radius: 15px;
-  background: var(--accent-color);
-  color: var(--aditional-color);
+  background: #a93b59;
+  color: #f5ebeb;
   text-align: center;
   font-size: 24px;
   width: 437px;
@@ -292,108 +265,13 @@ body {
 }
 
 .hero-button:hover {
-  background-color: var(--aditional-color);
-  color: var(--accent-color);
+  background-color: #f5ebeb;
+  color: #a93b59;
   transform: scale(1.05);
 }
 
 .hero-information {
-  color: var(--title-color);
-  font-size: 16px;
-  text-transform: lowercase;
-}
-
-.hero {
-  padding-top: 109px;
-  padding-bottom: 94px;
-  background-image: url(../images/flowershero.webp), url(../images/Ellipse4.webp);
-  background-repeat: no-repeat;
-  background-position: 900px 150px, 800px 350px;
-}
-
-.hero-title {
-  color: var(--accent-color);
-  font-family: Playfair Display;
-  font-size: 48px;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 1.25;
-  animation-name: run-word;
-  animation-duration: 3s;
-}
-
-.hero-list {
-  display: flex;
-  gap: 124px;
-  justify-content: center;
-}
-
-.hero-icon {
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2px;
-}
-
-.hero-item {
-  /* outline: #b96a7f solid; */
-  width: 201px;
-  text-align: center;
-}
-
-.hero-content {
-  display: flex;
-  align-items: flex-end;
-  gap: 24px;
-}
-
-.hero-header {
-  color: var(--aditional-color);
-  text-align: center;
-  font-family: Playfair Display;
-  font-size: 86px;
-  font-weight: 400;
-  line-height: 0.7;
-  text-transform: uppercase;
-  margin-top: 12px;
-  margin-bottom: 24px;
-  animation-name: run-title;
-  animation-duration: 3s;
-}
-
-.hero-text {
-  color: var(--aditional-color);
-  font-size: 24px;
-  text-transform: capitalize;
-  margin-bottom: 42px;
-}
-
-.hero-button {
-  border-radius: 15px;
-  background: var(--accent-color);
-  color: var(--aditional-color);
-  text-align: center;
-  font-size: 24px;
-  width: 437px;
-  display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  animation-name: run-button;
-  animation-duration: 3s;
-}
-
-.hero-button:hover {
-  background-color: var(--aditional-color);
-  color: var(--accent-color);
-  transform: scale(1.05);
-}
-
-.hero-information {
-  color: var(--title-color);
+  color: #fff;
   font-size: 16px;
   text-transform: lowercase;
 }
@@ -408,7 +286,7 @@ body {
 }
 
 .catalog-title {
-  color: var(--accent-color);
+  color: #a93b59;
   position: relative;
   font-family: Playfair Display;
   font-size: 36px;
@@ -429,7 +307,7 @@ body {
 }
 
 .catalog-heading {
-  color: var(--title-color);
+  color: #fff;
   text-align: center;
   font-family: Playfair Display;
   font-size: 36px;
@@ -478,7 +356,7 @@ body {
 }
 
 .catalog-item {
-  color: var(--title-color);
+  color: #fff;
   font-size: 18px;
   font-weight: 300;
 }
@@ -492,7 +370,7 @@ body {
 }
 
 .catalog-price {
-  color: var(--page-color);
+  color: #000;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -517,7 +395,7 @@ body {
 }
 
 .catalog-info {
-  color: var(--text-color);
+  color: #444;
   font-family: Rubik;
   font-size: 16px;
   font-weight: 300;
@@ -526,7 +404,7 @@ body {
 }
 
 .catalog-button {
-  color: var(--aditional-color);
+  color: #f5ebeb;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 1.6px;
@@ -552,7 +430,7 @@ body {
 
 .catalog-flower {
   border-radius: 15px;
-  background: var(--title-color);
+  background: #fff;
   position: relative;
   overflow: hidden;
   padding-bottom: 20px;
@@ -640,7 +518,7 @@ body {
 }
 
 .quality-heading {
-  color: var(--accent-color);
+  color: #a93b59;
   font-family: Playfair Display;
   font-size: 36px;
   font-style: normal;
@@ -684,7 +562,7 @@ body {
 }
 
 .quality-sublitle {
-  color: var(--title-color);
+  color: #fff;
   font-size: 32px;
   font-weight: 400;
   line-height: 1.25;
@@ -693,7 +571,7 @@ body {
 }
 
 .quality-text {
-  color: var(--title-color);
+  color: #fff;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.25;
@@ -704,7 +582,7 @@ body {
 }
 
 .client-title {
-  color: var(--accent-color);
+  color: #a93b59;
   font-family: Playfair Display;
   font-size: 36px;
   font-weight: 600;
@@ -737,7 +615,7 @@ body {
 }
 
 .footer {
-  border-top: 2px solid var(--accent-color, #a93b59);
+  border-top: 2px solid #a93b59, #a93b59;
   padding-top: 40px;
   padding-bottom: 50px;
 }
@@ -767,7 +645,7 @@ body {
 }
 
 .footer-link {
-  color: var(--aditional-color);
+  color: #f5ebeb;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
@@ -784,7 +662,7 @@ body {
 .footer-icon {
   width: 40px;
   height: 40px;
-  fill: var(--accent-color);
+  fill: #a93b59;
 }
 
 .footer-picture {
@@ -793,7 +671,7 @@ body {
 }
 
 .footer-word {
-  color: var(--aditional-color);
+  color: #f5ebeb;
   text-align: center;
   font-family: Spline Sans;
   font-size: 24px;
@@ -803,7 +681,7 @@ body {
 }
 
 .footer-connect {
-  color: var(--title-color);
+  color: #fff;
   text-align: center;
   font-size: 24px;
   font-weight: 400;
@@ -812,7 +690,7 @@ body {
 }
 
 .footer-desc {
-  color: var(--title-color);
+  color: #fff;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.25;
@@ -829,7 +707,7 @@ body {
 }
 
 .contacts-title {
-  color: var(--accent-color);
+  color: #a93b59;
   font-family: Playfair Display;
   font-size: 36px;
   font-weight: 600;
@@ -845,14 +723,14 @@ body {
 }
 
 .contacts-subtitle {
-  color: var(--aditional-color);
+  color: #f5ebeb;
   font-size: 32px;
   font-weight: 400;
   line-height: 1.25;
 }
 
 .contacts-content-title {
-  color: var(--title-color);
+  color: #fff;
   text-align: center;
   font-size: 32px;
   font-weight: 400;
@@ -860,7 +738,7 @@ body {
 }
 
 .contacts-text {
-  color: var(--contacts-form-color);
+  color: rgba(255, 255, 255, 0.71);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.25;
@@ -922,7 +800,7 @@ body {
   align-items: flex-start;
   gap: 16px;
   border-radius: 15px;
-  background: var(--button-and-text-color, #a93b59);
+  background: #a93b59, #a93b59;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 6px 0px 12px 0px rgba(0, 0, 0, 0.1), 23px 0px 23px 0px rgba(0, 0, 0, 0.09), 51px 0px 31px 0px rgba(0, 0, 0, 0.05), 91px 0px 36px 0px rgba(0, 0, 0, 0.01), 142px 0px 40px 0px rgba(0, 0, 0, 0);
 }
 
@@ -1061,7 +939,7 @@ body {
 }
 
 .modal-title {
-  color: var(--accent-color);
+  color: #a93b59;
   font-family: "Playfair Display";
   font-size: 48px;
   font-style: italic;
@@ -1072,7 +950,7 @@ body {
 }
 
 .modal-description {
-  color: var(--title-color);
+  color: #fff;
   font-family: "Source Sans Pro";
   font-size: 32px;
   font-weight: 600;
