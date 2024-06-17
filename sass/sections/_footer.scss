@@ -32,9 +32,7 @@
 .footer-link {
   color: $aditional-color;
   text-align: center;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.25;
+  @extend %editional-text;
 }
 
 .footer-logo {
@@ -76,9 +74,7 @@
 
 .footer-desc {
   color: $title-color;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.25;
+  @extend %editional-text;
 }
 
 .footer-info {

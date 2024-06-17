@@ -3,11 +3,9 @@
 }
 
 .quality-heading {
-  color: $accent-color;
-  font-family: Playfair Display;
-  font-size: 36px;
+  
+  @extend %title-fonts;
   font-style: normal;
-  font-weight: 600;
   text-align: end;
   margin-bottom: 171px;
   padding-right: 136px;
@@ -49,16 +47,15 @@
 
 .quality-sublitle {
   color: $title-color;
+  @extend %editional-text;
   font-size: 32px;
-  font-weight: 400;
-  line-height: 1.25;
   margin-bottom: 16px;
   font-family: Source Sans 3;
 }
 
 .quality-text {
   color: $title-color;
-  font-size: 20px;
+  @extend %editional-text;
   font-weight: 300;
-  line-height: 1.25;
+
 }

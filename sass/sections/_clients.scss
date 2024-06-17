@@ -3,10 +3,7 @@
 }
 
 .client-title {
-  color: $accent-color;
-  font-family: Playfair Display;
-  font-size: 36px;
-  font-weight: 600;
+  @extend %title-fonts;
   line-height: 48px;
   margin-bottom: 140px;
 }
