@@ -5,92 +5,91 @@
     url(../images/Ellipse4.webp);
   background-repeat: no-repeat;
   background-position: 900px 150px, 800px 350px;
-}
 
-.hero-title {
-  color: $accent-color;
-  font-family: Playfair Display;
-  font-size: 48px;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 1.25;
-  animation-name: run-word;
-  animation-duration: 3s;
-}
+  &__title {
+    color: $accent-color;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.25;
+    animation-name: run-word;
+    animation-duration: 3s;
+  }
 
-.hero-list {
-  display: flex;
-  gap: 124px;
-  justify-content: center;
-}
+  &__list {
+    @include flex-box($gap: 124px);
+  }
 
-.hero-icon {
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2px;
-}
+  &__icon {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+  }
 
-.hero-item {
-  /* outline: #b96a7f solid; */
-  width: 201px;
-  text-align: center;
-}
+  &__item {
+    /* outline: #b96a7f solid; */
+    width: 201px;
+    text-align: center;
+  }
 
-.hero-content {
-  display: flex;
-  align-items: flex-end;
-  gap: 24px;
-}
+  &__content {
+    @include flex-box($align-vertical: flex-end, $align-horisontal: flex-start, $gap: 24px);
+  }
 
-.hero-header {
-  color: $aditional-color;
-  text-align: center;
-  font-family: Playfair Display;
-  font-size: 86px;
-  font-weight: 400;
-  line-height: 0.7;
-  text-transform: uppercase;
-  margin-top: 12px;
-  margin-bottom: 24px;
-  animation-name: run-title;
-  animation-duration: 3s;
-}
+  &__header {
+    color: $aditional-color;
+    text-align: start;
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 400;
+    line-height: 0.7;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    animation-name: run-title;
+    animation-duration: 3s;
+  }
 
-.hero-text {
-  color: $aditional-color;
-  font-size: 24px;
-  text-transform: capitalize;
-  margin-bottom: 42px;
-}
+  &__text {
+    color: $aditional-color;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 42px;
+  }
 
-.hero-button {
-  border-radius: 15px;
-  background: $accent-color;
-  color: $aditional-color;
-  text-align: center;
-  font-size: 24px;
-  width: 437px;
-  display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  animation-name: run-button;
-  animation-duration: 3s;
-}
+  &__button {
+    border-radius: 15px;
+    background: $accent-color;
+    color: $aditional-color;
+    text-align: center;
+    font-size: 24px;
+    width: 437px;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation-name: run-button;
+    animation-duration: 3s;
+  }
 
-.hero-button:hover {
-  background-color: $aditional-color;
-  color: $accent-color;
-  transform: scale(1.05);
-}
-.hero-information {
-  color: $title-color;
-  font-size: 16px;
-  text-transform: lowercase;
+  &__button:hover {
+    background-color: $aditional-color;
+    color: $accent-color;
+    transform: scale(1.05);
+  }
+
+  &__information {
+    color: $title-color;
+    font-size: 16px;
+    text-transform: lowercase;
+  }
+
+
 }

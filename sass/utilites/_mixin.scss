@@ -1,0 +1,7 @@
+@mixin flex-box($align-vertical: center, $align-horisontal: center, $gap: 0px, $wraping: nowrap) {
+    display: flex;
+    align-items: $align-vertical;
+    justify-content: $align-horisontal;
+    gap: $gap;
+    flex-wrap: $wraping;
+}

@@ -28,6 +28,5 @@
 }
 
 .client-list {
-  display: flex;
-  justify-content: space-between;
+  @include flex-box($align-horisontal: space-between);
 }

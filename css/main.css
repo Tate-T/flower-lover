@@ -97,11 +97,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0px;
+  flex-wrap: nowrap;
 }
 .header__logo {
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
+  justify-content: flex-start;
+  gap: 0px;
+  flex-wrap: nowrap;
 }
 .header__flower {
   width: 42px;
@@ -124,10 +129,11 @@ body {
   stroke: #f5ebeb;
 }
 .header__list {
-  /* display: none; */
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 32px;
+  flex-wrap: nowrap;
 }
 .header__item {
   position: relative;
@@ -202,8 +208,7 @@ body {
   background-repeat: no-repeat;
   background-position: 900px 150px, 800px 350px;
 }
-
-.hero-title {
+.hero__title {
   color: #a93b59;
   font-family: Playfair Display;
   font-size: 48px;
@@ -213,36 +218,35 @@ body {
   animation-name: run-word;
   animation-duration: 3s;
 }
-
-.hero-list {
+.hero__list {
   display: flex;
-  gap: 124px;
+  align-items: center;
   justify-content: center;
+  gap: 124px;
+  flex-wrap: nowrap;
 }
-
-.hero-icon {
+.hero__icon {
   width: 40px;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2px;
 }
-
-.hero-item {
+.hero__item {
   /* outline: #b96a7f solid; */
   width: 201px;
   text-align: center;
 }
-
-.hero-content {
+.hero__content {
   display: flex;
   align-items: flex-end;
+  justify-content: flex-start;
   gap: 24px;
+  flex-wrap: nowrap;
 }
-
-.hero-header {
+.hero__header {
   color: #f5ebeb;
-  text-align: center;
+  text-align: start;
   font-family: Playfair Display;
   font-size: 86px;
   font-weight: 400;
@@ -253,15 +257,13 @@ body {
   animation-name: run-title;
   animation-duration: 3s;
 }
-
-.hero-text {
+.hero__text {
   color: #f5ebeb;
   font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 42px;
 }
-
-.hero-button {
+.hero__button {
   border-radius: 15px;
   background: #a93b59;
   color: #f5ebeb;
@@ -277,14 +279,12 @@ body {
   animation-name: run-button;
   animation-duration: 3s;
 }
-
-.hero-button:hover {
+.hero__button:hover {
   background-color: #f5ebeb;
   color: #a93b59;
   transform: scale(1.05);
 }
-
-.hero-information {
+.hero__information {
   color: #fff;
   font-size: 16px;
   text-transform: lowercase;
@@ -325,12 +325,13 @@ body {
 .catalog-box {
   border-radius: 15px;
   background: #b96a7f;
-  display: flex;
   max-width: 1085px;
   padding: 20.5px 25px;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
-  /* margin: 0 auto; */
+  justify-content: space-between;
+  gap: 0px;
+  flex-wrap: nowrap;
 }
 
 .catalog-svg {
@@ -393,8 +394,9 @@ body {
 .catalog-boxies {
   display: flex;
   align-items: flex-end;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
+  flex-wrap: nowrap;
 }
 
 .catalog-info {
@@ -423,12 +425,13 @@ body {
 }
 
 .catalog-flowers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
   width: 1110px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .catalog-flower {
@@ -445,7 +448,10 @@ body {
 
 .catalog-overlay {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0px;
+  flex-wrap: nowrap;
   background: rgba(185, 106, 127, 0.5);
   width: 100%;
   height: 100%;
@@ -484,10 +490,11 @@ body {
 
 .catalog-forms {
   display: flex;
-  padding: 25px 15px 15px 15px;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  flex-wrap: nowrap;
+  padding: 25px 15px 15px 15px;
   background-color: #fff;
 }
 
@@ -538,7 +545,10 @@ body {
 
 .quality-item {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: 0px;
+  flex-wrap: nowrap;
 }
 
 .quality-item:nth-child(odd) {
@@ -602,7 +612,10 @@ body {
 
 .client-list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: 0px;
+  flex-wrap: nowrap;
 }
 
 .footer {
@@ -613,7 +626,10 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 0px;
+  flex-wrap: nowrap;
 }
 
 /* footer div {
@@ -626,8 +642,10 @@ body {
 
 .footer-socials {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 46px;
+  flex-wrap: nowrap;
   margin-top: 32px;
 }
 
@@ -641,10 +659,12 @@ body {
 }
 
 .footer-logo {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 0px;
+  flex-wrap: nowrap;
 }
 
 .footer-icon {
@@ -686,9 +706,12 @@ body {
 }
 
 .footer-contacts {
-  display: flex;
   flex-direction: column;
-  gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24;
+  flex-wrap: nowrap;
 }
 
 .contacts-title::after {
@@ -727,16 +750,21 @@ body {
 
 .contacts-box {
   display: flex;
-  margin-top: 140px;
+  align-items: center;
   justify-content: center;
+  gap: 0px;
+  flex-wrap: nowrap;
+  margin-top: 140px;
 }
 
 .contacts-content {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 39px;
+  flex-wrap: nowrap;
   padding: 40px 60px 13px 6px;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 39px;
   margin-left: 242px;
   max-width: 535px;
 }
@@ -751,8 +779,11 @@ body {
 
 .contacts-list {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 40px;
+  flex-wrap: nowrap;
+  flex-direction: column;
   margin-bottom: 40px;
 }
 
@@ -769,10 +800,12 @@ body {
   font-size: 24px;
   font-weight: 400;
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: nowrap;
   width: 416px;
   padding: 16px 116px;
-  align-items: flex-start;
-  gap: 16px;
   border-radius: 15px;
   background: #a93b59, #a93b59;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 6px 0px 12px 0px rgba(0, 0, 0, 0.1), 23px 0px 23px 0px rgba(0, 0, 0, 0.09), 51px 0px 31px 0px rgba(0, 0, 0, 0.05), 91px 0px 36px 0px rgba(0, 0, 0, 0.01), 142px 0px 40px 0px rgba(0, 0, 0, 0);
@@ -781,7 +814,9 @@ body {
 .contacts-service {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 32px;
+  flex-wrap: nowrap;
 }
 
 .contacts-foto {
@@ -791,7 +826,10 @@ body {
 
 .contacts-services {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 28px;
+  flex-wrap: nowrap;
   flex-direction: column;
 }
 

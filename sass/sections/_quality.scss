@@ -21,9 +21,7 @@
 }
 
 .quality-item {
-  display: flex;
-
-  justify-content: space-between;
+  @include flex-box($align-horisontal: space-between);
 }
 
 .quality-item:nth-child(odd) {

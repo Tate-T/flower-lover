@@ -42,17 +42,14 @@
   }
   
   .contacts-box {
-      display: flex;
+      @include flex-box;
       margin-top: 140px;
-      justify-content: center;
     }
     
     .contacts-content {
-      display: flex;
+      @include flex-box($align-vertical: flex-start, $gap: 39px);
       padding: 40px 60px 13px 6px;
       flex-direction: column;
-      align-items: flex-start;
-      gap: 39px;
       margin-left: 242px;
       max-width: 535px;
     }
@@ -66,9 +63,8 @@
     }
     
     .contacts-list {
-      display: flex;
+      @include flex-box($gap: 40px);
       flex-direction: column;
-      gap: 40px;
       margin-bottom: 40px;
     }
     
@@ -84,11 +80,9 @@
       color: #fff;
       font-size: 24px;
       font-weight: 400;
-      display: flex;
+      @include flex-box($align-vertical: flex-start, $gap: 16px);
       width: 416px;
       padding: 16px 116px;
-      align-items: flex-start;
-      gap: 16px;
       border-radius: 15px;
       background: $accent-color, #a93b59;
       box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
@@ -98,9 +92,7 @@
     }
     
     .contacts-service {
-      display: flex;
-      align-items: center;
-      gap: 32px;
+      @include flex-box($gap: 32px);
     }
     
     .contacts-foto {
@@ -109,8 +101,7 @@
     }
     
     .contacts-services {
-      display: flex;
-      gap: 28px;
+      @include flex-box($gap: 28px);
       flex-direction: column;
     }
     
