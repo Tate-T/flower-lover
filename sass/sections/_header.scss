@@ -2,12 +2,14 @@
   padding-top: 24px;
 
   &__container {
+
     @include flex-box($align-horisontal: space-between);
+    align-items: center;
   }
 
   &__logo {
     flex-direction: column;
-    @include flex-box ($align-horisontal: flex-start);
+    @include flex-box($align-horisontal: flex-start);
   }
 
   &__flower {
@@ -33,6 +35,37 @@
     height: 42px;
     stroke: #f5ebeb;
   }
+&__input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+
+}
+  &__findbutton {
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+  }
+  &__find {
+    stroke: #f5ebeb;
+    width: 42px;
+    height: 42px;
+  }
+  &__form{
+    display: flex;
+    margin-right: 16px;
+    align-items: center;
+    @media screen and (min-width: 1328px) {
+      display: none;
+      
+    }
+  }
+  &__navigation {
+    display: none;
+    @media screen and (min-width: 1328px) {
+      display: block;
+    }
+  }
 
   &__list {
     @include flex-box($gap: 32px);
@@ -54,12 +87,10 @@
   }
 
   &__link {
+    color: $aditional-color;
+    text-align: center;
+    font-size: 20px;
 
-      color: $aditional-color;
-      text-align: center;
-      font-size: 20px;
-    
-    
     &::after {
       content: "";
       background-color: #a93b59;
@@ -93,30 +124,23 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  
-&__decor {
-  display: block;
+  &__decor {
+    display: block;
+  }
+
+  &__decor:hover + &__catalog {
+    opacity: 1;
+  }
+
+  &__menu {
+    color: $title-color;
+  }
+
+  &__box {
+    padding-left: 110px;
+    margin-bottom: 437px;
+  }
 }
-
-&__decor:hover + &__catalog {
-  opacity: 1;
-}
-
-
-&__menu {
-  color: $title-color;
-}
- 
-
-&__box {
-  padding-left: 110px;
-  margin-bottom: 437px;
-}
-
-}
-
-
-
 
 @media screen and (min-width: 768px) {
   .header__button {

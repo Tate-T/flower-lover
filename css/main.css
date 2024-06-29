@@ -99,6 +99,7 @@ body {
   justify-content: space-between;
   gap: 0px;
   flex-wrap: nowrap;
+  align-items: center;
 }
 .header__logo {
   flex-direction: column;
@@ -127,6 +128,39 @@ body {
   width: 42px;
   height: 42px;
   stroke: #f5ebeb;
+}
+.header__input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+.header__findbutton {
+  background-color: transparent;
+  width: 42px;
+  height: 42px;
+}
+.header__find {
+  stroke: #f5ebeb;
+  width: 42px;
+  height: 42px;
+}
+.header__form {
+  display: flex;
+  margin-right: 16px;
+  align-items: center;
+}
+@media screen and (min-width: 1328px) {
+  .header__form {
+    display: none;
+  }
+}
+.header__navigation {
+  display: none;
+}
+@media screen and (min-width: 1328px) {
+  .header__navigation {
+    display: block;
+  }
 }
 .header__list {
   display: flex;

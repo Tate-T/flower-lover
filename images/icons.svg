@@ -17,6 +17,9 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M6.154 6.154l19.692 19.692"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M6.154 25.846l19.692-19.692"></path>
 </symbol>
+<symbol id="icon-find" viewBox="0 0 31 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.4884" d="M23.070 23.442l-1.488-1.488M15.256 22.698c0.928 0 1.848-0.183 2.705-0.538s1.637-0.876 2.294-1.533c0.657-0.656 1.177-1.436 1.533-2.294s0.538-1.777 0.538-2.706-0.183-1.848-0.538-2.706c-0.355-0.858-0.876-1.637-1.533-2.294s-1.436-1.177-2.294-1.533c-0.858-0.355-1.777-0.538-2.706-0.538-1.875 0-3.673 0.745-4.999 2.071s-2.071 3.124-2.071 4.999c0 1.875 0.745 3.673 2.071 4.999s3.124 2.071 4.999 2.071v0z"></path>
+</symbol>
 <symbol id="icon-menu" viewBox="0 0 42 43">
 <path d="M5.25 12.75H37.25M5.25 21.75H37.25M5.25 30.75H37.25" stroke="#F5EBEB" stroke-width="2" stroke-linecap="round"/>
 </symbol>
