@@ -1,15 +1,29 @@
 .hero {
   padding-top: 384px;
   padding-bottom: 80px;
-  background-image: url(../images/flowershero.webp),
+  background-image: url(../images/mobile/flowers-mobile@mobile-1x.webp),
     url(../images/Ellipse4.webp);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/flowers-mobile@mobile-2x.webp),
+      url(../images/Ellipse4.webp);
+  }
   background-repeat: no-repeat;
   background-position: 900px 150px, 800px 350px;
- @media screen and (min-width: 1328px){
-  padding-top: 109px;
-  padding-bottom: 94px;
- }
 
+  @media screen and (min-width: 1328px) {
+    padding-top: 109px;
+    padding-bottom: 94px;
+    background-image: url(../images/desktop/flowers-hero@desktop-1x.webp),
+      url(../images/Ellipse4.webp);
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/flowers-hero@desktop-2x.webp),
+        url(../images/Ellipse4.webp);
+    }
+  }
 
   &__title {
     color: $accent-color;
@@ -41,7 +55,11 @@
   }
 
   &__content {
-    @include flex-box($align-vertical: flex-end, $align-horisontal: flex-start, $gap: 24px);
+    @include flex-box(
+      $align-vertical: flex-end,
+      $align-horisontal: flex-start,
+      $gap: 24px
+    );
   }
 
   &__header {
@@ -95,6 +113,4 @@
     font-size: 16px;
     text-transform: lowercase;
   }
-
-
 }
