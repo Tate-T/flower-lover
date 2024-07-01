@@ -239,14 +239,25 @@ body {
 .hero {
   padding-top: 384px;
   padding-bottom: 80px;
-  background-image: url(../images/flowershero.webp), url(../images/Ellipse4.webp);
+  background-image: url(../images/mobile/flowers-mobile@mobile-1x.webp), url(../images/Ellipse4.webp);
   background-repeat: no-repeat;
   background-position: 900px 150px, 800px 350px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/mobile/flowers-mobile@mobile-2x.webp), url(../images/Ellipse4.webp);
+  }
 }
 @media screen and (min-width: 1328px) {
   .hero {
     padding-top: 109px;
     padding-bottom: 94px;
+    background-image: url(../images/desktop/flowers-hero@desktop-1x.webp), url(../images/Ellipse4.webp);
+  }
+}
+@media screen and (min-width: 1328px) and (min-device-pixel-ratio: 2), screen and (min-width: 1328px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1328px) and (min-resolution: 192dpi), screen and (min-width: 1328px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/desktop/flowers-hero@desktop-2x.webp), url(../images/Ellipse4.webp);
   }
 }
 .hero__title {
