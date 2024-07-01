@@ -3,11 +3,15 @@ html {
 }
 
 .container {
-  max-width: 1328px;
+  max-width: 390px;
   width: 100%;
   padding: 0 15px;
   /* outline: solid darkturquoise 2px; */
   margin: 0 auto;
+
+  @media screen and (min-width: 1328px){
+    max-width: 1328px;
+   }
 }
 
 body {

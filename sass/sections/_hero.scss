@@ -14,55 +14,87 @@
   &__title {
     color: $accent-color;
     font-family: Playfair Display;
-    font-size: 48px;
+    font-size: 24px;
     font-style: italic;
     font-weight: 500;
-    line-height: 1.25;
+    line-height: 1.33;
     animation-name: run-word;
     animation-duration: 3s;
+
+    @media screen and (min-width: 1328px){
+      font-size: 48px;
+      line-height: 1.25;
+     }
   }
 
   &__list {
-    @include flex-box($gap: 124px);
+    @include flex-box($gap: 40px);
+
+    @media screen and (min-width: 1328px){
+      @include flex-box($gap: 124px);
+     }
   }
 
   &__icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2px;
+
+    @media screen and (min-width: 1328px){
+      width: 40px;
+    height: 40px;
+     }
   }
 
   &__item {
     /* outline: #b96a7f solid; */
-    width: 201px;
+    width: 80px;
     text-align: center;
+
+    @media screen and (min-width: 1328px){
+      width: 201px;
+     }
   }
 
   &__content {
-    @include flex-box($align-vertical: flex-end, $align-horisontal: flex-start, $gap: 24px);
+    @include flex-box($align-vertical: flex-end, $align-horisontal: flex-start, );
+    @media screen and (min-width: 1328px){
+      @include flex-box($align-vertical: flex-end, $align-horisontal: flex-start, $gap: 24px);
+     }
   }
 
   &__header {
     color: $aditional-color;
-    text-align: start;
+    text-align: center;
     font-family: Playfair Display;
-    font-size: 86px;
+    font-size: 40px;
     font-weight: 400;
-    line-height: 0.7;
+    line-height: 1;
     text-transform: uppercase;
     margin-top: 12px;
     margin-bottom: 24px;
     animation-name: run-title;
     animation-duration: 3s;
+
+    @media screen and (min-width: 1328px){
+      text-align: start;
+      font-size: 86px;
+      line-height: 0.7;
+     }
   }
 
   &__text {
+    display: none;
     color: $aditional-color;
     font-size: 24px;
     text-transform: capitalize;
     margin-bottom: 42px;
+
+    @media screen and (min-width: 1328px){
+      display: block;
+     }
   }
 
   &__button {
@@ -70,18 +102,25 @@
     background: $accent-color;
     color: $aditional-color;
     text-align: center;
-    font-size: 24px;
-    width: 437px;
+    font-size: 18px;
+    max-width: 296px;
+    width: 100%;
     display: block;
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 32px;
     padding-right: 32px;
+    margin-top: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     animation-name: run-button;
     animation-duration: 3s;
+
+    @media screen and (min-width: 1328px){
+      font-size: 24px;
+      width: 437px;
+     }
   }
 
   &__button:hover {
@@ -92,9 +131,30 @@
 
   &__information {
     color: $title-color;
-    font-size: 16px;
+    font-size: 12px;
     text-transform: lowercase;
+
+    @media screen and (min-width: 1328px){
+      font-size: 16px;
+     }
   }
 
+  &__boxe {
+    background: rgba(255, 255, 255, 0.60);
+    padding: 40px;
+    margin-bottom: 24px;
+    @media screen and (min-width: 1328px){
+      background-color: transparent;
+      margin-bottom: 437px;
+     }
+  }
 
+  &__box {
+    
+   
+
+    @media screen and (min-width: 1328px){
+      padding-left: 110px;
+     }
+  }
 }
