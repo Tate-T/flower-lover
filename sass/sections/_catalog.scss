@@ -1,17 +1,27 @@
 .catalog {
-  padding-bottom: 92px;
-  padding-top: 44px;
+  padding-bottom: 80px;
+  padding-top: 0;
   background-image: url(../images/flower-section.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+
+  @media screen and (min-width: 1328px) {
+    padding-top: 44px;
+    padding-bottom: 92px;
+  }
 }
 
 .catalog-title {
   position: relative;
   @extend %title-fonts;
-  margin-bottom: 101px;
-  padding-left: 349px;
+  margin-bottom: 24px;
+  padding-left: 224px;
+
+  @media screen and (min-width: 1328px) {
+    margin-bottom: 101px;
+    padding-left: 349px;
+  }
 }
 
 .catalog-title::after {
@@ -21,9 +31,16 @@
   position: absolute;
   left: 0px;
   background-color: #b02e51;
-  width: 491.001px;
-  height: 2px;
+  width: 350px;
+  height: 1px;
   margin-right: auto;
+
+  @media screen and (min-width: 1328px) {
+    display: block;
+    position: absolute;
+    width: 491.001px;
+    height: 2px;
+  }
 }
 
 .catalog-heading {
@@ -31,6 +48,14 @@
   @extend %title-fonts;
   color: $title-color;
   margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.catalog-post {
+  font-size: 24px;
+  @media screen and (min-width: 1328px) {
+    font-size: 36px;
+  }
 }
 
 .catalog-box {
@@ -84,7 +109,7 @@
 }
 
 .catalog-price {
-  color:$page-color;
+  color: $page-color;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -215,4 +240,3 @@
   font-weight: 600;
   line-height: 32px; /* 200% */
 }
-
