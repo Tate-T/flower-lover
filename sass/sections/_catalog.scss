@@ -1,14 +1,16 @@
 .catalog {
   padding-bottom: 80px;
   padding-top: 0;
-  background-image: url(../images/flower-section.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
+
+  
 
   @media screen and (min-width: 1328px) {
     padding-top: 44px;
     padding-bottom: 92px;
+    background-image: url(../images/flower-section.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
   }
 }
 
@@ -47,7 +49,7 @@
   text-align: center;
   @extend %title-fonts;
   color: $title-color;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 28px;
 }
 
@@ -62,13 +64,14 @@
   border-radius: 15px;
   background: #b96a7f;
   max-width: 1085px;
-  padding: 20.5px 25px;
+  padding: 4px 16px;
   @include flex-box($align-horisontal: space-between);
   flex-direction: column;
   align-items: stretch;
   @media screen and (min-width: 1328px) {
     flex-direction: row;
     align-items: center;
+    padding: 20.5px 25px;
   }
 
 }
@@ -99,6 +102,26 @@
   background-color: transparent;
   border: none;
   color: #fff;
+  border-bottom: 1px solid #4444 ;
+  color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+  @media screen and (min-width: 1328px) {
+    border-bottom: none;
+    border-right: 1px solid #4444 ;
+  }
+}
+
+.catalog-special{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
 }
 
 .catalog-item {
@@ -158,12 +181,21 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 114px;
+  display: none;
+  @media screen and (min-width: 1328px) { 
+    display: block;
+  }
 }
 
 .catalog-flowers {
   width: 1110px;
-  margin: 0 auto;
+  margin-left: 76px;
+  height: 435px;
   @include flex-box($gap: 30px, $wraping: wrap);
+  @media screen and (min-width: 1328px) {
+    margin: 0 auto;
+    height: 435px;
+  }
 }
 
 .catalog-flower {
@@ -172,11 +204,19 @@
   position: relative;
   overflow: hidden;
 
-  padding-bottom: 20px;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-bottom:0;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   position: relative;
+
+  @media screen and (min-width: 1328px) {
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+  }
 }
 
 .catalog-overlay {
