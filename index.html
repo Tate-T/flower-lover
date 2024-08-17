@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +23,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -33,14 +33,14 @@
           <img class="header__flower" src="./images/logo.webp" alt="lotus" />
           <span class="header__flowerlover">FlowerLover</span>
         </a>
-        <form class="header__form" action=""> 
-          <input class="header__input" type="text">
-          <button type="submit" class="header__findbutton"> 
+        <form class="header__form" action="">
+          <input class="header__input" type="text" />
+          <button type="submit" class="header__findbutton">
             <svg class="header__find">
               <use href="./images/icons.svg#icon-find"></use>
             </svg>
           </button>
-        </form> 
+        </form>
         <button class="header__button js-open-menu">
           <svg class="header__icon">
             <use href="./images/icons.svg#icon-menu"></use>
@@ -87,18 +87,18 @@
         <div class="container">
           <div class="hero__boxe">
             <h2 class="hero__title">Неймовірні</h2>
-          <div class="hero__box">
-            <div class="hero__content">
-              <h1 class="hero__header">Букети</h1>
-              <h2 class="hero__title">зі свіжих квітів</h2>
+            <div class="hero__box">
+              <div class="hero__content">
+                <h1 class="hero__header">Букети</h1>
+                <h2 class="hero__title">зі свіжих квітів</h2>
+              </div>
+              <p class="hero__text">З доставкою по Києву протягом 1 години</p>
+              <button class="hero__button" type="button" data-modal-open>
+                ЗАМОВИТИ КВІТИ
+              </button>
             </div>
-            <p class="hero__text">З доставкою по Києву протягом 1 години</p>
-            <button class="hero__button" type="button" data-modal-open>
-              ЗАМОВИТИ КВІТИ
-            </button>
           </div>
-        </div>
-          
+
           <ul class="hero__list">
             <li class="hero__item">
               <img class="hero__icon" src="./images/rose.webp" alt="rose" />
@@ -124,7 +124,9 @@
         <div class="container">
           <h2 class="catalog-title">Каталог</h2>
           <div class="catalog-background">
-            <h2 class="catalog-heading catalog-post">Доставка квітів в Києві</h2>
+            <h2 class="catalog-heading catalog-post">
+              Доставка квітів в Києві
+            </h2>
             <div class="catalog-box">
               <select name="price" class="catalog-list">
                 <option value="xs" selected class="catalog-item">
@@ -175,36 +177,42 @@
             </div>
           </div>
           <h2 class="catalog-heading">Хіт продажів</h2>
-          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="auto"
-          centered-slides="true" space-between="30">
-          <swiper-slide>
-          <img src="./images/flowers1.webp" alt="flower 1">
-          </swiper-slide>
-          <swiper-slide>
-          <img src="./images/flowers2.webp" alt="flower 2">
-          </swiper-slide>
-          <swiper-slide>
-          <img src="./images/flowers3.webp" alt="flower 3">
-          </swiper-slide>
-          <swiper-slide>
-          <img src="./images/flowers4.webp" alt="flower 4">
-          </swiper-slide>
-          <swiper-slide>
-          <img src="./images/flowers5.webp" alt="flower 5">
-          </swiper-slide>
-          <swiper-slide>
-          <img src="./images/flowers6.webp" alt="flower 6">
-          </swiper-slide>
-          <swiper-slide>
-          <img src="./images/flowers1.webp" alt="flower 1">
-          </swiper-slide>
-          <swiper-slide>
-          <img src="./images/flowers2.webp" alt="flower 2">
-          </swiper-slide>
-          <swiper-slide>
-          <img src="./images/flowers3.webp" alt="flower 3">
-          </swiper-slide>
-        </swiper-container>
+          <swiper-container
+            class="mySwiper"
+            pagination="true"
+            pagination-clickable="true"
+            slides-per-view="auto"
+            centered-slides="true"
+            space-between="30"
+          >
+            <swiper-slide>
+              <img src="./images/flowers1.webp" alt="flower 1" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="./images/flowers2.webp" alt="flower 2" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="./images/flowers3.webp" alt="flower 3" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="./images/flowers4.webp" alt="flower 4" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="./images/flowers5.webp" alt="flower 5" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="./images/flowers6.webp" alt="flower 6" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="./images/flowers1.webp" alt="flower 1" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="./images/flowers2.webp" alt="flower 2" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="./images/flowers3.webp" alt="flower 3" />
+            </swiper-slide>
+          </swiper-container>
           <!-- <ul class="catalog-flowers">
             <li
               class="catalog-flower"
@@ -494,7 +502,7 @@
         </div>
       </section>
       <!-- quality -->
-      <!-- <section class="quality" id="about-us">
+      <section class="quality" id="about-us">
         <div class="container">
           <h2 class="quality-heading">Якість в деталях</h2>
           <ul class="quality-list">
@@ -511,15 +519,19 @@
                   для вашого букету.
                 </p>
               </div>
-              <img
-                src="./images/quality1.webp"
-                width="659"
-                height="477"
-                alt="quality1"
-                class="quality-image"
-                data-aos="fade-right"
-                data-aos-duration="3000"
-              />
+              <picture>
+                <source media="(min-width: 1328px)" srcset="./images/desktop/quality1@desktop-1x.webp 1x, ./images/desktop/quality1@desktop-2x.webp 2x ">
+               <source media="(max-width: 1327px)" srcset="./images/mobile/quality1@mobile-1x.webp 1x, ./images/mobile/quality1@mobile-2x.webp 2x">
+                <img
+                  src="./images/mobile/quality1@mobile-1x.webp"
+                  width="659"
+                  height="477"
+                  alt="quality1"
+                  class="quality-image"
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                />
+              </picture>
             </li>
             <li class="quality-item">
               <div class="quality-info">
@@ -563,7 +575,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- contacts -->
       <div class="flower-background" id="contacts">
         <section class="contacts">
