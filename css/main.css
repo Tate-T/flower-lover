@@ -1064,7 +1064,12 @@ body {
   .flower-background {
     background-position: 0% 190px, left -10px;
     background-size: 100% 564px, 776px 1104px;
-    background-image: linear-gradient(rgba(185, 106, 127, 0.7), rgba(185, 106, 127, 0.7)), url(../images/flower-form.webp);
+    background-image: linear-gradient(rgba(185, 106, 127, 0.7), rgba(185, 106, 127, 0.7)), url(../images/desktop/contacts-flower_background-desktop-1x.webp);
+  }
+}
+@media screen and (min-width: 1328px) and (min-device-pixel-ratio: 2), screen and (min-width: 1328px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1328px) and (min-resolution: 192dpi), screen and (min-width: 1328px) and (min-resolution: 2dppx) {
+  .flower-background {
+    background-image: url(../images/desktop/contacts-flower_background-desktop-2x.webp);
   }
 }
 

@@ -1,5 +1,4 @@
 .contacts {
-
   &__title {
     @extend %title-fonts;
 
@@ -10,7 +9,6 @@
       height: 2px;
       background-color: #b02e51;
     }
-
   }
 
   &__box {
@@ -24,7 +22,7 @@
   &__info {
     max-width: 535px;
   }
- &__form {
+  &__form {
     padding: 16px 16px 16px 16px;
     @media screen and (min-width: 1328px) {
       padding: 36px 64px 86px 55px;
@@ -34,39 +32,34 @@
     color: $aditional-color;
     font-size: 24px;
     line-height: 1.25;
-    @media screen and (min-width: 1328px){
+    @media screen and (min-width: 1328px) {
       font-size: 32px;
     }
   }
-  &__span{
+  &__span {
     color: $title-color;
     font-weight: 600;
-
   }
   &__list {
     @include flex-box($gap: 4px);
     flex-direction: column;
     margin-top: 24px;
     margin-bottom: 24px;
-    @media screen and (min-width:1328px){
-    @include flex-box($gap: 40px);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    @media screen and (min-width: 1328px) {
+      @include flex-box($gap: 40px);
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
   }
-  &__item{
+  &__item {
     width: 358px;
     height: 72px;
-    @media screen and (min-width: 1328px){
+    @media screen and (min-width: 1328px) {
       width: 416px;
       height: 70.02px;
     }
   }
 }
-
-
-
-
 
 .contacts-content-title {
   color: $title-color;
@@ -82,17 +75,27 @@
 }
 
 .flower-background {
-  background-image: linear-gradient(rgba(185, 106, 127, 0.7),
-      rgba(185, 106, 127, 0.7));
+  background-image: linear-gradient(
+    rgba(185, 106, 127, 0.7),
+    rgba(185, 106, 127, 0.7)
+  );
   background-repeat: no-repeat;
   background-size: 100% 666px;
- 
-  @media screen and (min-width: 1328px){
+
+  @media screen and (min-width: 1328px) {
     background-position: 0% 190px, left -10px;
     background-size: 100% 564px, 776px 1104px;
-    background-image: linear-gradient(rgba(185, 106, 127, 0.7),
-      rgba(185, 106, 127, 0.7)),
-    url(../images/flower-form.webp);
+    background-image: linear-gradient(
+        rgba(185, 106, 127, 0.7),
+        rgba(185, 106, 127, 0.7)
+      ),
+      url(../images/desktop/contacts-flower_background-desktop-1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/contacts-flower_background-desktop-2x.webp);
+    }
   }
 }
 
@@ -110,13 +113,11 @@
     6px 0px 12px 0px rgba(0, 0, 0, 0.1), 23px 0px 23px 0px rgba(0, 0, 0, 0.09),
     51px 0px 31px 0px rgba(0, 0, 0, 0.05), 91px 0px 36px 0px rgba(0, 0, 0, 0.01),
     142px 0px 40px 0px rgba(0, 0, 0, 0);
-    @media screen and  (min-width:1328px){
-      width: 416px;
-      padding: 16px 116px;
-    }
+  @media screen and (min-width: 1328px) {
+    width: 416px;
+    padding: 16px 116px;
+  }
 }
-
-
 
 .contacts-content {
   @include flex-box($align-vertical: flex-start, $gap: 39px);
@@ -126,13 +127,9 @@
   max-width: 535px;
 }
 
-
-
 .contacts-subtitle {
   margin-bottom: 40px;
 }
-
-
 
 .contacts-input {
   border-radius: 15px;
@@ -141,8 +138,6 @@
   width: 416px;
   border: none;
 }
-
-
 
 .contacts-service {
   @include flex-box($gap: 32px);
@@ -157,6 +152,3 @@
   @include flex-box($gap: 28px);
   flex-direction: column;
 }
-
-
-
